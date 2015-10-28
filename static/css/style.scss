@@ -1,0 +1,40 @@
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,700italic,300,400,700);
+
+body {font-family: 'Open Sans', sans-serif;  }
+.top-bar{background-color:#087dc2; padding:10px 0px;  
+.call-us{font-size:14px; color:#fff; float:left;}
+.top-nav ul{margin:0px; float: right; padding: 0px; list-style:none; 
+li{font-size:14px; display:inline-block; text-align:right; 
+a {
+  color: #fff;
+  &:hover {
+    color: #efefef;
+  }
+  &:active {
+    color: #efefef;
+  }
+}   
+ }
+}
+}
+
+.navbar-royaltrip{min-height:80px; 
+ul{margin:24px 0 0 0; padding: 0px; list-style:none; 
+li{font-size:14px; text-align:right; 
+a {
+  color: #3a3a3a; text-transform: uppercase;
+  &:hover {
+    color: #3a3a3a;
+    background-color:#fee029; border-radius:3px;
+  }
+  
+}   
+.active {
+    color: #3a3a3a;
+    background-color:#fee029; border-radius:3px;  
+  }
+ }
+
+}
+}
+.carousel-control{display:none; }

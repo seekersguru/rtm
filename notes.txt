@@ -1,0 +1,44 @@
+REVIEW FORM + RATING 
+WILL SHOW ON S CROLLER
+
+Program Helpline Number: +91 7676 440044. Monday - Sunday: 8 am - 8 pm IST. Call to find out details about any programs / followups in your area.
+
+>> HANDPICKED(DYNAMIC) ITENARY CAN BE SHOWN IN HANDPICKED SAME AS FRONT END
+>> VERIFIED XXX WILL GO TO COMMENT ON ITERNARY REVIEWS OF ITERNARY [LISTING]
+>> VIP ACCESS + FORM REQUIRED
+>> lOW PRICES GUARANTEED
+>> 24X7 SUPPORT 
+>> CUSTOMER SUPPORT 
+>> 
+--------------------------------------
+Plan My trip | Enquiry 
+Airport  Railway : xxxxxxxNo
+Reviews 
+
+
+------------
+Top desination 
+Recent Places 
+
+http://royaltripmaker.com/
+
+
+===============
+Username (leave blank to use 'nishants'): saurabh
+Email address: royaltripmaker@gmail.com 
+Error: Enter a valid email address.
+Email address: royaltripmaker@gmail.com
+Password: rtm@123
+Password (again):rtm@123 
+Superuser created successfully
+
+
+====CKEDITOR 
+https://pypi.python.org/pypi/django-tinymce/2.0.5
+pip install django-tinymce
+ sudo pip install Pillow
+
+===========
+
+
+.
