@@ -6,12 +6,12 @@
 <div class="container">
 <!-- Main component for a primary marketing message or call to action -->
 	<div class="row">
-		<div class="col-sm-9">
+		<div class="col-sm-12">
 			<div class="tour-details-sec">
  				<h3>{{iternary.name}}</h3>   
 				<div class="day-night">{{iternary.duration}}</div>  
 				<div class="price">Pirce :{{iternary.price}}/-</div> 
-            	<p>{{iternary.introduction}}</p>
+            	<p>{{iternary.introduction|safe}}</p>
 
 				<div class="with-nav-tabs">
                 	<div>
@@ -37,27 +37,22 @@
 
                         </div>
                         <div id="tab4default" class="tab-pane fade">
-                          
-  
-        <div class="flexslider">
-          <ul class="slides">
-            <li data-thumb="img/image-slider001.jpg">
-              <img src="img/image-slider001.jpg" />
-            </li>
-            <li data-thumb="img/image-slider002.jpg">
-              <img src="img/image-slider002.jpg" />
-            </li>
-            <li data-thumb="img/image-slider003.jpg">
-              <img src="img/image-slider003.jpg" />
-            </li>
-            <li data-thumb="img/image-slider004.jpg">
-              <img src="img/image-slider004.jpg" />
-            </li>
-          </ul>
-        </div>
-     
-     
-    
+					        <div class="flexslider">
+					          <ul class="slides">
+					            <li data-thumb="img/image-slider001.jpg">
+					              <img src="img/image-slider001.jpg" />
+					            </li>
+					            <li data-thumb="img/image-slider002.jpg">
+					              <img src="img/image-slider002.jpg" />
+					            </li>
+					            <li data-thumb="img/image-slider003.jpg">
+					              <img src="img/image-slider003.jpg" />
+					            </li>
+					            <li data-thumb="img/image-slider004.jpg">
+					              <img src="img/image-slider004.jpg" />
+					            </li>
+					          </ul>
+					        </div>
                         </div>
                         <div id="tab5default" class="tab-pane fade">
                          <div class="row">
@@ -103,6 +98,7 @@
       </div>
 
       </div>
+      {%comment%}
       <div class="col-sm-3">
       	<div class="right-sidebar">
       		<h2>Refine Search</h2>
@@ -132,7 +128,7 @@
 			</div>
 		</div>
       </div>
-      
+      {%endcomment%}
       </div>
     </div>
     <!-- /container -->
