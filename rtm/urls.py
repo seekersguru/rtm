@@ -27,18 +27,15 @@ urlpatterns = [
     
     ## This one is for top packages 
     url(r'^listing-tour/$', listing_tour, name='listing-tour'),
-    url(r'^listing-tour/(?P<tour_id>\d+)/$', listing_tour, name='listing-tour_by_id'),
+
+    url(r'^tour/(?P<tour_id>[-\w]+)/$', listing_tour, name='listing-tour_by_id'),
     
     url(r'^vip-access/$', vip_access, name='vip-access'),
     url(r'^low-price-guaranteed/$', low_price_guaranteed, name='low_price_guaranteed'),
-    url(r'^detail/$', iternary_detail, name='iternary_detail'),
-    
-    
-    
-    
-    
+    url(r'^package/(?P<iternary_id>[-\w]+)/$', iternary_detail, name='iternary_detail'),
     
 ]
+##iternary_detail => iternary_id
 
 admin.site.site_header = 'RTM'
 admin.site.site_title = 'RTM'

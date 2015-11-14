@@ -1,8 +1,8 @@
 from django.template.response import TemplateResponse
 from django.http import HttpResponse
-from models import Places
+from models import Places,Iternary
 def index(request,params=None,id=None):
-    from models import Places
+    
     #return HttpResponse("rs")       
     return TemplateResponse(request, 'index.html', {"places":Places.objects.all()})
 
@@ -20,8 +20,12 @@ def listing_tour(request,tour_id=None):
         context["nav"]="listing_tour"
         context["head"]="Top Packages"
     else:
-        place=Places.objects.get(pk=int(tour_id))
-        context["head"]=place.name
+        place=Places.objects.get(url_property=request.get_full_path())
+        
+        iternaries=Iternary.objects.filter(place=place)
+        context["place"]=place
+        context["iternaries"]=iternaries
+    
     return TemplateResponse(request, 'listing_tour.html', context)
     
 def vip_access(request):
@@ -31,5 +35,9 @@ def vip_access(request):
 def low_price_guaranteed(request):
     return TemplateResponse(request, 'low_price_guaranteed.html', {"nav":"low_price_guaranteed"})
 
-def iternary_detail(request):
-    return TemplateResponse(request, 'details.html', {"nav":"low_price_guaranteed"})
+def iternary_detail(request,iternary_id):
+    iternary=Iternary.objects.get(url_property=request.get_full_path())
+    
+    return TemplateResponse(request, 'details.html', {"iternary":iternary})
+
+

@@ -1,0 +1,15 @@
+https://github.com/tokland/youtube-upload
+
+https://developers.google.com/youtube/v3/guides/uploading_a_video
+  > > https://console.developers.google.com/project
+     Register you application with google API.
+      https://console.developers.google.com/home/dashboard?project=mmitmh
+      ProjectID: mmitmh
+      Projectnumber: 471440919894
+      Click Enable API:Youtube data api > Enable API
+      https://console.developers.google.com/apis/credentials?project=mmitmh
+      https://console.developers.google.com/apis/api/youtube/overview?project=mmitmh
+       Try this api in explorer
+          https://developers.google.com/apis-explorer/?hl=en_US#p/youtube/v3/
+          
+      

@@ -1,0 +1,81 @@
+diff --git a/places/models.py b/places/models.py
+index ac6b461..4a9695d 100644
+--- a/places/models.py
++++ b/places/models.py
+@@ -6,7 +6,9 @@ from django.db import models
+ 
+ from tinymce.models import HTMLField
+ 
+-############ ITernary starts #############
++##aOne place can be nultile itinerary
++
++############ Itinerary starts #############
+ # Create your models here.
+ class Iternary(models.Model):
+     #http://royaltripmaker.com/ Select Goa
+@@ -17,10 +19,16 @@ class Iternary(models.Model):
+     overview=HTMLField()
+     pricing_and_schedule=HTMLField()
+     iternary=HTMLField()
+-    iternary=HTMLField()
++    iternary=HTMLField() ## co
+     latitude=models.FloatField()
+     longitude=models.FloatField()
++    ## title -  show number of characters
++    ## meta description - 160 chars
++    ## keyword 
++    ## page url  space - > small
++    ## package/name (unique) 
+ 
++    
+ class IternaryImages(models.Model):
+     image = models.ImageField(upload_to='static/placeimages/%Y/%m/%d/%H/%M/%S/')
+     iternary = models.ForeignKey(Iternary)
+@@ -31,7 +39,7 @@ class IternaryEnquiry(models.Model):
+     mobile=models.IntegerField()
+     date=models.DateField()
+     subject=models.TextField()
+-
++#Separate 
+ class InfoIternary(models.Model):
+     contact_person = models.CharField(max_length=128)
+     address = models.CharField(max_length=128)
+@@ -40,6 +48,16 @@ class InfoIternary(models.Model):
+     website=models.CharField(max_length=128)
+ ############ ITernary ends #############
+ 
++
++class Themes(models.Model):
++    #http://royaltripmaker.com/ Select Goa
++    name = models.CharField(max_length=128, unique=True)
++    introduction=HTMLField()
++    main_image = models.ImageField(upload_to='static/placehome/%Y/%m/%d/%H/%M/%S/',default="None")
++    #Many to Many fir itinerary
++# Show same like [places     
++
++
+ ############# Places starts ##############
+ # Create your models here.
+ class Places(models.Model):
+@@ -48,12 +66,19 @@ class Places(models.Model):
+     introduction=HTMLField()
+     activity=HTMLField()
+     main_image = models.ImageField(upload_to='static/placehome/%Y/%m/%d/%H/%M/%S/',default="None")
+-    
++    ## add field show /hide.
++    ## order 
++    ## title -  show number of characters
++    ## meta description - 160 chars
++    ## keyword 
++    ## tour/name (unique)  space - > small
+ 
+ 
+ class PlaceImages(models.Model):
+     image = models.ImageField(upload_to='static/placeimages/%Y/%m/%d/%H/%M/%S/')
+     place = models.ForeignKey(Places)
++    ### http://royaltripmaker.com/trip.aspx 
++    ## name / description /> show 
+     
+     
+ ############# Places ends ##############
+\ No newline at end of file

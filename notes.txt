@@ -24,12 +24,12 @@ http://royaltripmaker.com/
 
 
 ===============
-Username (leave blank to use 'nishants'): saurabh
+Username (leave blank to use 'nishants'): root
 Email address: royaltripmaker@gmail.com 
 Error: Enter a valid email address.
 Email address: royaltripmaker@gmail.com
-Password: rtm@123
-Password (again):rtm@123 
+Password: root
+Password (again):root
 Superuser created successfully
 
 
@@ -39,6 +39,12 @@ pip install django-tinymce
  sudo pip install Pillow
 
 ===========
+
+
+Q1: Hot destinations > Want head falg 
+Q2 : SEO 
+
+
 
 
 .
