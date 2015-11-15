@@ -1,3 +1,8 @@
+saurabhmanipal@gmail.com
+
+ssh -i "rtm.pem" ubuntu@54.201.139.103
+
+
 REVIEW FORM + RATING 
 WILL SHOW ON S CROLLER
 
