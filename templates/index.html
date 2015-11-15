@@ -22,7 +22,27 @@
 		</div>
 		{% endfor %}
 	</div>
-	
+	<h1>
+		Top Themes<span class="yallow-line"> </span>
+	</h1>
+	<div class="row">
+		{% for place in themes %}
+		<div class="col-sm-4">
+			<div class="pakage-box">
+				<h3><a href="{{place.url_property}}">{{place.name}}</a></h3>
+				<div>
+					<img src="{{place.main_image}}" class="img-responsive" alt="">
+				</div>
+				<p>
+				<span style="color: #a9a9a9; font-family: 'Open Sans', sans-serif; font-size: 14px; line-height: 24px;">
+				{{place.introduction|safe}}
+				</span>
+				</p>
+				
+			</div>
+		</div>
+		{% endfor %}
+	</div>	
 	
 	<div class="royaltrip-maker">
 		<h2>

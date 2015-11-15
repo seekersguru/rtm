@@ -132,7 +132,16 @@ class Themes(models.Model):
     #http://royaltripmaker.com/ Select Goa
     name = models.CharField(max_length=128, unique=True)
     introduction=HTMLField()
-    main_image = models.ImageField(upload_to='static/placehome/%Y/%m/%d/%H/%M/%S/',default="None")
+    main_image = models.ImageField(upload_to='static/themes/%Y/%m/%d/%H/%M/%S/',default="None")
+    iternaries=models.ManyToManyField(Iternary)
+    url_property = models.CharField(max_length=512,default=1)
+    order = models.IntegerField(unique=True)
+
+    def __str__(self):
+        return self.name    
+    def save(self, force_insert=False, force_update=False):
+        self.url_property = "/theme/"+self.name.lower().replace(" ","-")+"/"
+        super(Themes, self).save(force_insert, force_update)
     #Many to Many fir itinerary
 # Show same like [places     
 

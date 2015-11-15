@@ -1,15 +1,20 @@
 from django.contrib import admin
 # Register your models here.
 
-from .models import Places,PlaceImages ,Iternary,IternaryImages,IternaryEnquiry,InfoIternary
+from .models import Places,PlaceImages ,Iternary,IternaryImages,IternaryEnquiry,InfoIternary,Themes
 from django.contrib.auth.models import User, Group
 
 class PlacesAdmin(admin.ModelAdmin):
     model=Places
     list_display = ['name','url_property']
+
 class IternaryAdmin(admin.ModelAdmin):
     model=Iternary
     list_display = ['name','url_property',] 
+  
+class ThemesAdmin(admin.ModelAdmin):
+    model=Themes
+    list_display = ['name','url_property',]   
   
   
 # Register your models here.
@@ -19,6 +24,8 @@ admin.site.register(Iternary,IternaryAdmin)
 admin.site.register(IternaryImages)
 admin.site.register(IternaryEnquiry)
 admin.site.register(InfoIternary)
+admin.site.register(Themes,ThemesAdmin)
+
 
 admin.site.unregister(User)
 admin.site.unregister(Group)
