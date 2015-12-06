@@ -1,0 +1,16 @@
+~/mongodb-osx-x86_64-3.0.7/bin/mongod --dbpath /Users/nishants/proects/bestpis/geolocation/data/
+pip install pymongo 
+
+1) To create bus stops data 
+
+i) bus_stops.tsv downloaded from #https://docs.google.com/spreadsheets/d/1JBUJa4vI0UT_35hs-6YvbjqDX_PdZt6V_e46buT5psk/edit#gid=665000&vpid=A1
+ii) run insert_bus.py
+iii) Refering https://blog.codecentric.de/en/2012/02/spring-data-mongodb-geospatial-queries/
+iv) Ensure run index on db.bus_stops.ensureIndex({p:"2d"})
+v) db.bus_stops.find({p:{$near:[18.940708,72.833214], $maxDistance: 0.005 }}).count()
+Now point is .001 should be distance in km 
+
+2) To query above as mentioned in 
+http://api.mongodb.org/python/current/examples/geo.html
+worked and run 
+python query_bus_stops.py

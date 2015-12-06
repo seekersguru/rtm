@@ -17,7 +17,7 @@ from django.conf.urls import include, url
 from django.contrib import admin
 from tinymce import urls as tiny_urls
 from places.views import index,review_and_verified,customer_support \
-    ,listing_tour,vip_access,low_price_guaranteed,iternary_detail,theme_tour
+    ,listing_tour,vip_access,low_price_guaranteed,iternary_detail,theme_tour,nearest_buses
 urlpatterns = [
     url(r'^admin/', include(admin.site.urls)),
     url(r'^tinymce/', include(tiny_urls)),
@@ -35,6 +35,7 @@ urlpatterns = [
     url(r'^low-price-guaranteed/$', low_price_guaranteed, name='low_price_guaranteed'),
     url(r'^package/(?P<iternary_id>[-\w]+)/$', iternary_detail, name='iternary_detail'),
     
+    url(r'^api/bus_stops/$', nearest_buses, name='nearest-buses'),
     
 ]
 ##iternary_detail => iternary_id

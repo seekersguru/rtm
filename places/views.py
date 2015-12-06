@@ -1,6 +1,7 @@
 from django.template.response import TemplateResponse
 
 from models import Places,Iternary,Themes
+from django.http import JsonResponse
 def index(request,params=None,id=None):
     
     #return HttpResponse("rs")       
@@ -54,7 +55,30 @@ def iternary_detail(request,iternary_id):
     return TemplateResponse(request, 'details.html', {"iternary":iternary})
 
 
-
+def nearest_buses(request):
+    #/api/bus_stops/?lat=18.940708&long=72.833214
+    lat=request.GET.get("lat")
+    long=request.GET.get("long")
+    if not (lat and long):
+        
+        return JsonResponse({"error":"lat , long required"})
+    try:
+        pos=[float(lat) , float(long)]
+    except:
+        return JsonResponse({"error":"lat , long invalid"})
+    
+    from pymongo import MongoClient
+    client = MongoClient('localhost', 27017)
+    from bson.son import SON
+    db=client.best # Create db name best
+    bus_stops = db.bus_stops
+    query = {"p": SON([("$near", pos), ("$maxDistance", .0005)])}
+    records= bus_stops.find(query)
+    records=[e for e in records]
+    response= {"status":"success",
+    "bus_stops":[{"stop_name":str(record['n']),"lat":record['p'][0],"long":record['p'][1]} for record in records]}
+    return JsonResponse(response)
+    
 
 
 
