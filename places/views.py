@@ -72,11 +72,19 @@ def nearest_buses(request):
     from bson.son import SON
     db=client.best # Create db name best
     bus_stops = db.bus_stops
-    query = {"p": SON([("$near", pos), ("$maxDistance", .0005)])}
+    query = {"p": SON([("$near", pos), ("$maxDistance", .01)])}
     records= bus_stops.find(query)
     records=[e for e in records]
-    response= {"status":"success",
-    "bus_stops":[{"stop_name":str(record['n']),"lat":record['p'][0],"long":record['p'][1]} for record in records]}
+    dd={}
+    ll=[]
+    for record in records:
+        if (record['p'][0],record['p'][1]) not in dd:
+            ll.append({"stop_name":str(record['n']),"lat":record['p'][0],"long":record['p'][1]})
+            dd[(record['p'][0],record['p'][1])]=1  
+          
+            
+    #response= {"status":"success","bus_stops":ll}
+    response= {"status":"success","bus_stops":ll}
     return JsonResponse(response)
     
 
