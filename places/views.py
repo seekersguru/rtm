@@ -58,12 +58,18 @@ def iternary_detail(request,iternary_id):
 def nearest_buses(request):
     #/api/bus_stops/?lat=18.940708&long=72.833214
     lat=request.GET.get("lat")
-    long=request.GET.get("long")
-    if not (lat and long):
+    longi=request.GET.get("long")
+    dist=request.GET.get("dist")
+    if dist:
+        try:
+            dist=float(dist)
+        except:
+            dist=None
+    if not (lat and longi):
         
         return JsonResponse({"error":"lat , long required"})
     try:
-        pos=[float(lat) , float(long)]
+        pos=[float(lat) , float(longi)]
     except:
         return JsonResponse({"error":"lat , long invalid"})
     
@@ -72,7 +78,9 @@ def nearest_buses(request):
     from bson.son import SON
     db=client.best # Create db name best
     bus_stops = db.bus_stops
-    query = {"p": SON([("$near", pos), ("$maxDistance", .01)])}
+    if not dist:
+        dist=.01
+    query = {"p": SON([("$near", pos), ("$maxDistance", dist)])}
     records= bus_stops.find(query)
     records=[e for e in records]
     dd={}
