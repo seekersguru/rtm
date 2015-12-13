@@ -12,8 +12,9 @@ print db.places.create_index([("latlong", GEO2D)]) #latlong_2d
 Using following say values not between -180 to + 180 
 db.bus_stops.ensureIndex({latlong:"2d"})
 
-v) db.bus_stops.find({latlong:{$near:[18.940708,72.833214], $maxDistance: 0.005 }}).count()
-Now point is .001 should be distance in km 
+v) db.bus_stops.find({latlong:{$near:[18.940708,72.833214], $maxDistance: 0.5/111.12 }}).count()
+500 meter.
+
 
 2) To query above as mentioned in 
 http://api.mongodb.org/python/current/examples/geo.html
