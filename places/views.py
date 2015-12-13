@@ -76,19 +76,28 @@ def nearest_buses(request):
     from pymongo import MongoClient
     client = MongoClient('localhost', 27017)
     from bson.son import SON
-    db=client.best # Create db name best
+    db=client.bestpis # Create db name best
     bus_stops = db.bus_stops
     if not dist:
-        dist=.01
-    query = {"p": SON([("$near", pos), ("$maxDistance", dist)])}
-    records= bus_stops.find(query)
+        dist=0.005
+    query = {"latlong": SON([("$near", pos), ("$maxDistance", dist)])}
+    #query= {"latlong":SON([("$geoWithin", pos), ("$maxDistance", dist)])} 
+    #http://stackoverflow.com/questions/17415192/how-to-use-geowithin-in-mongodb
+    #{"adr.cor":{"$geoWithin":{"$center":[center, perim]}}}
+    #http://stackoverflow.com/questions/21642213/geowithin-center-with-pymongo-aggregation-throws-error
+    #{'location' : {'$geoWithin': {'$centerSphere': [[lng,lat], distance] }
+    #query={'location' : {'$geoWithin': {'$centerSphere': [[-88,30], 1000000000000000000000000/3963.2] }}}
+    #query={"latlong":{"$near":[18.940708,72.833214], "e": 5 }}
+    records= bus_stops.find(query)        
+    #{ $geoWithin: { $centerSphere: [ [ -88, 30 ], 10/3963.2 ] } }} 
+    
     records=[e for e in records]
     dd={}
     ll=[]
     for record in records:
-        if (record['p'][0],record['p'][1]) not in dd:
-            ll.append({"stop_name":str(record['n']),"lat":record['p'][0],"long":record['p'][1]})
-            dd[(record['p'][0],record['p'][1])]=1  
+        if (record['latlong'][0],record['latlong'][1]) not in dd:
+            ll.append({"stop_name":str(record['stopname']),"lat":record['latlong'][0],"long":record['latlong'][1]})
+            dd[(record['latlong'][0],record['latlong'][1])]=1  
           
             
     #response= {"status":"success","bus_stops":ll}
