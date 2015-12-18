@@ -111,6 +111,10 @@ def nearest_buses(request):
                            "line2":"",
                            "line3":str(record["road_name"]),
                            "line4":"Depot : "+str(record["depot"]) + "("+str(record["direction"])+")",
+                           "lat":record['latlong'][0],
+                           "long":record['latlong'][1],
+                           "stop_name":str(record['stopname']),
+                           "stop_code":str(record["stopcode"]),
                            
                            
                            })
