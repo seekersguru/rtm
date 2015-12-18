@@ -95,11 +95,35 @@ def nearest_buses(request):
     dd={}
     ll=[]
     for record in records:
+        
         if (record['latlong'][0],record['latlong'][1]) not in dd:
-            ll.append({"stop_name":str(record['stopname']),"lat":record['latlong'][0],"long":record['latlong'][1]})
-            dd[(record['latlong'][0],record['latlong'][1])]=1  
-          
+#             ll.append({"stop_name":str(record['stopname']),
+#                        "lat":record['latlong'][0],
+#                        "long":record['latlong'][1],
+#                        "depot":str(record['depot']),
+#                        "road_name":str(record["road_name"]),
+#                        "stop_code":str(record["stop_code"]),
+#                        "direction":str(record["u'direction"]) # DN,"UP"
+#                        
+#                        })
+            try:
+                ll.append({"line1":str(record['stopname']) + "("+str( record["stopcode"]) +")",
+                           "line2":"",
+                           "line3":str(record["road_name"]),
+                           "line4":"Depot : "+str(record["depot"]) + "("+str(record["direction"])+")",
+                           
+                           
+                           })
+            except:
+                import pdb;pdb.set_trace()
             
+            dd[(record['latlong'][0],record['latlong'][1])]=1 
+        else:
+            print record['latlong'][0],record['latlong'][1] ,record['stopname'] , "Repeated "
+             
+          
+
+                
     #response= {"status":"success","bus_stops":ll}
     response= {"status":"success","bus_stops":ll}
     return JsonResponse(response)
