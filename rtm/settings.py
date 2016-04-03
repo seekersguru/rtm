@@ -104,6 +104,8 @@ USE_TZ = True
 
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/1.8/howto/static-files/
+MEDIA_URL='http://localhost:8000/'  #change to 'http://54.201.139.103' while live
+MEDIA_ROOT = '/media/'
 
 STATIC_URL = '/static/'
 STATICFILES_DIRS = (
