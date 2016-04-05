@@ -7,14 +7,17 @@ from django.contrib.auth.models import User, Group
 class PlacesAdmin(admin.ModelAdmin):
     model=Places
     list_display = ['name','url_property']
+    ordering=('name',)
 
 class IternaryAdmin(admin.ModelAdmin):
     model=Iternary
-    list_display = ['name','url_property',] 
+    list_display = ['name','url_property',]
+    ordering=('name',) 
   
 class ThemesAdmin(admin.ModelAdmin):
     model=Themes
-    list_display = ['name','url_property',]   
+    list_display = ['name','url_property',] 
+    ordering=('name',)  
   
   
 # Register your models here.
