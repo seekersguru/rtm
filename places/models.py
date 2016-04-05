@@ -135,7 +135,7 @@ class Themes(models.Model):
     main_image = models.ImageField(upload_to='static/themes/%Y/%m/%d/%H/%M/%S/',default="None")
     iternaries=models.ManyToManyField(Iternary)
     url_property = models.CharField(max_length=512,default=1)
-    order = models.IntegerField(unique=True)
+    order = models.IntegerField(unique=True,null=True,blank=True)
 
     def __str__(self):
         return self.name    
