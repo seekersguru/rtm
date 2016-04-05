@@ -34,7 +34,7 @@ class Places(models.Model):
     
     show = models.CharField(max_length=1,default=1)
     url_property = models.CharField(max_length=512,default=1)
-    order = models.IntegerField(unique=True)
+    order = models.IntegerField(unique=True,null=True,blank=True)
     
     ## tour/name (unique)  space - > small
 #     @property
