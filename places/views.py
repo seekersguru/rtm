@@ -1,11 +1,29 @@
 from django.template.response import TemplateResponse
+from django.contrib import messages
+from django.core.mail import EmailMessage
+from django.core.mail import send_mail
+from django.template.response import TemplateResponse
 
-from models import Places,Iternary,Themes
+from models import Places,Iternary,Themes,IternaryEnquiry
 from django.http import JsonResponse
 def index(request,params=None,id=None):
+    if request.method == 'POST':
+        print request.POST
+        data=request.POST
+        print data
+        #name = data['name']
+        #email = data['email']
+        #mobile = data['mobile']
+        #subject = data['subject']
+        #print name,email,mobile,subject
+        messages.success(request, 'Message sent successfully you will recieve a phone call shortly.')
+        return TemplateResponse(request, 'index.html',{"places":Places.objects.all(),
+                                                    "themes":Themes.objects.all(),
+                                                    })
+    else:
     
-    #return HttpResponse("rs")       
-    return TemplateResponse(request, 'index.html', {"places":Places.objects.all(),
+        #return HttpResponse("rs")       
+         return TemplateResponse(request, 'index.html', {"places":Places.objects.all(),
                                                     "themes":Themes.objects.all(),
                                                     })
 
@@ -19,16 +37,12 @@ def customer_support(request,params=None,id=None):
 
 def listing_tour(request,tour_id=None):
     context={}
-    if not tour_id:
-        context["nav"]="listing_tour"
-        context["head"]="Top Packages"
-    else:
-        place=Places.objects.get(url_property=request.get_full_path())
+    place=Places.objects.all()
         
-        iternaries=Iternary.objects.filter(place=place)
-        context["place"]=place
-        context["iternaries"]=iternaries
-    
+    iternaries=Iternary.objects.filter(place=place)
+        #context["place"]=place
+        #context["iternaries"]=iternaries
+    context={"place":place,"iternaries":iternaries}
     return TemplateResponse(request, 'listing_tour.html', context)
 
 def theme_tour(request,theme_id=None):
@@ -48,6 +62,19 @@ def vip_access(request):
     
 def low_price_guaranteed(request):
     return TemplateResponse(request, 'low_price_guaranteed.html', {"nav":"low_price_guaranteed"})
+
+#def enquiry(request,id="enq_form"):
+#    if request.method == 'POST':
+#        data=request.POST
+#        name = data['name']
+#        email = data['email']
+#        mobile = data['mobile']
+#       subject = data['subject']
+#        print name,email,mobile,subject
+#       messages.success(request, 'Message sent successfully you will recieve a phone call shortly.')
+#    return TemplateResponse(request, 'index.html',{"places":Places.objects.all(),
+#                                                   "themes":Themes.objects.all(),
+#                                                    })
 
 def iternary_detail(request,iternary_id):
     iternary=Iternary.objects.get(url_property=request.get_full_path())
