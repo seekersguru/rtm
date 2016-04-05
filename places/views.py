@@ -37,12 +37,19 @@ def customer_support(request,params=None,id=None):
 
 def listing_tour(request,tour_id=None):
     context={}
-    place=Places.objects.all()
+    if not tour_id:
+        place=Places.objects.all()
         
-    iternaries=Iternary.objects.filter(place=place)
-        #context["place"]=place
-        #context["iternaries"]=iternaries
-    context={"place":place,"iternaries":iternaries}
+        iternaries=Iternary.objects.filter(place=place)
+        context["place"]=place
+        context["iternaries"]=iternaries
+    else:
+        place=Places.objects.get(url_property=request.get_full_path())
+        
+        iternaries=Iternary.objects.filter(place=place)
+        context["place"]=place
+        context["iternaries"]=iternaries
+
     return TemplateResponse(request, 'listing_tour.html', context)
 
 def theme_tour(request,theme_id=None):
