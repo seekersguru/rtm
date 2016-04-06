@@ -2,7 +2,6 @@
 .project
 .pydevproject
 static/placehome/*
-static/iternaryimage/*
 static/placeimages/*
 
 
