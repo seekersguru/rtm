@@ -1,7 +1,7 @@
 from django.db import models
 
 # Create your models here.
-
+from datetime import date
 from django.db import models
 
 from tinymce.models import HTMLField
@@ -117,7 +117,7 @@ class IternaryEnquiry(models.Model):
     email=models.EmailField(max_length=512)
     mobile=models.IntegerField()
     date=models.DateField()
-    subject=models.TextField()
+    comment=models.TextField()
 #Separate 
 class InfoIternary(models.Model):
     contact_person = models.CharField(max_length=128)
@@ -143,5 +143,18 @@ class Themes(models.Model):
         self.url_property = "/theme/"+self.name.lower().replace(" ","-")+"/"
         super(Themes, self).save(force_insert, force_update)
     #Many to Many fir itinerary
-# Show same like [places     
+# Show same like [places ]
+class SliderImages(models.Model):
+    image = models.ImageField(upload_to='static/slider/') 
+
+
+
+  
+class ReviewVerified(models.Model):
+    name = models.CharField(max_length=128)
+    city = models.CharField(max_length=128)
+    trip_name = models.CharField(max_length=128)
+    rating = models.CharField(max_length=128)
+    comment=models.TextField()
+      
 
