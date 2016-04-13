@@ -1,33 +1,46 @@
 from django.template.response import TemplateResponse
 from django.contrib import messages
-from django.core.mail import EmailMessage
 from django.core.mail import send_mail
-from django.template.response import TemplateResponse
-
-from models import Places,Iternary,Themes,IternaryEnquiry
+from django.conf import settings
+from datetime import datetime
+from models import Places,Iternary,Themes,SliderImages,IternaryEnquiry,ReviewVerified
 from django.http import JsonResponse
 def index(request,params=None,id=None):
-    if request.method == 'POST':
-        print request.POST
-        data=request.POST
-        print data
-        #name = data['name']
-        #email = data['email']
-        #mobile = data['mobile']
-        #subject = data['subject']
-        #print name,email,mobile,subject
+    if request.method=='POST':
+        name = request.POST['name']
+        email = request.POST['email']
+        phone =request.POST['phone']
+        comment=request.POST['comment']
+        #print name,email,phone,comment
+        obj=IternaryEnquiry(name=name,email=email,mobile=phone,comment=comment,date=datetime.now())
+        obj.save()
+        sub="Mail From Royal Trip Maker"
+	msg='From : %s  \n Message : %s'%((email+"   "+"Name :"+name+" "+"Mobile:"+phone),comment)
+	frm=email
+	to_us=[settings.EMAIL_HOST_USER]
+	send_mail(sub,msg,frm,to_us,fail_silently=False)
         messages.success(request, 'Message sent successfully you will recieve a phone call shortly.')
-        return TemplateResponse(request, 'index.html',{"places":Places.objects.all(),
+          
+
+    #return HttpResponse("rs")     
+    return TemplateResponse(request, 'index.html', {"places":Places.objects.all(),
                                                     "themes":Themes.objects.all(),
-                                                    })
-    else:
-    
-        #return HttpResponse("rs")       
-         return TemplateResponse(request, 'index.html', {"places":Places.objects.all(),
-                                                    "themes":Themes.objects.all(),
+                                                    "slider":SliderImages.objects.all(),
                                                     })
 
 def review_and_verified(request,params=None,id=None):
+    if request.method=='POST':
+        data = request.POST
+        rating=data['rating']
+        name = request.POST['name']
+        city = request.POST['city']
+        trip =request.POST['trip']
+        comment=request.POST['comment']
+        #rating=request.method['rating']
+        #print name,city,trip,comment,rating
+        obj=ReviewVerified(rating=rating,name=name,city=city,trip_name=trip,comment=comment)
+        obj.save()
+        messages.success(request, 'Thanks for your Reviews.')   
     #return HttpResponse("rs")       
     return TemplateResponse(request, 'review_and_verified.html', {"nav":"review_and_verified"})
 
@@ -70,18 +83,7 @@ def vip_access(request):
 def low_price_guaranteed(request):
     return TemplateResponse(request, 'low_price_guaranteed.html', {"nav":"low_price_guaranteed"})
 
-#def enquiry(request,id="enq_form"):
-#    if request.method == 'POST':
-#        data=request.POST
-#        name = data['name']
-#        email = data['email']
-#        mobile = data['mobile']
-#       subject = data['subject']
-#        print name,email,mobile,subject
-#       messages.success(request, 'Message sent successfully you will recieve a phone call shortly.')
-#    return TemplateResponse(request, 'index.html',{"places":Places.objects.all(),
-#                                                   "themes":Themes.objects.all(),
-#                                                    })
+
 
 def iternary_detail(request,iternary_id):
     iternary=Iternary.objects.get(url_property=request.get_full_path())
