@@ -1,4 +1,5 @@
 {% extends "base.html" %} {% block container %}
+{% load staticfiles %}
 <div class="container">
 	<h1>
 		Top Packages<span class="yallow-line"> </span>
@@ -249,23 +250,20 @@
 		<li data-target="#myCarousel" data-slide-to="3"></li>
 	</ol>
 	<!-- Wrapper for slides -->
-	<div class="carousel-inner" role="listbox">
-		<div class="item active">
-			<img src="/static/img/Goa.jpg" alt="">
-		</div>
-		<div class="item">
-			<img src="/static/img/17.jpg" alt="">
-		</div>
-		<div class="item">
-			<img src="/static/img/sentosa_island.jpg" alt="">
-		</div>
-		<div class="item">
-			<img src="/static/img/SRINAGAR.jpg" alt="">
-		</div>
-		<div class="item">
-			<img src="/static/img/international.jpg" alt="">
-		</div>
-	</div>
+
+<div class="carousel-inner" role="listbox">
+    {% for slider in slider %}
+    {% if forloop.counter == 1 %}
+    <div class="item active">
+    {% else %}
+    <div class="item">
+    {% endif %}
+        <img src="{{ slider.image.url }}" alt="Image">
+    </div>
+    {% endfor %}
+    </div>
+ 
+
 	<!-- Left and right controls -->
 	<a class="left carousel-control" href="#myCarousel" role="button"
 		data-slide="prev"> <span class="glyphicon glyphicon-chevron-left"
@@ -353,3 +351,9 @@
 	</div>
 </div>
 {% endblock %}
+<!-- Place in the <head>, after the three links -->
+<script type="text/javascript" charset="utf-8">
+  $(window).load(function() {
+    $('.flexslider').flexslider();
+  });
+</script>
