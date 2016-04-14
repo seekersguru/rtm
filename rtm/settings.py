@@ -25,23 +25,24 @@ SECRET_KEY = '4z-f1%h9&i-^bor$n2)92z=il%&zq=dvzx2l!4-a9*x%w6kcl$'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['royaltripmaker.com','www.royaltripmaker.com']
-'''#DEFAULT_FROM_EMAIL = 'info@royaltripmaker.com'
-SERVER_EMAIL = 'mail.royaltripmaker.com'
+ALLOWED_HOSTS = ['royaltripmakers.com','www.royaltripmakers.com']
+'''EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
+SERVER_EMAIL = 'www.royaltripmakers.com'
 EMAIL_USE_TLS = True
-EMAIL_HOST = 'smtp.mail.royaltripmaker.com'
+EMAIL_HOST = 'smtp.mail.royaltripmakers.com'
 EMAIL_PORT = 25
 EMAIL_HOST_USER = 'info@royaltripmaker.com'
 EMAIL_HOST_PASSWORD = 'layor@2160'
+'''
 
-#EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'''
-DEFAULT_FROM_EMAIL = 'culture.connect.usa@gmail.com'
-SERVER_EMAIL = 'culture.connect.usa@gmail.com'
+#EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend
+DEFAULT_FROM_EMAIL = 'helloroyaltrip@gmail.com'
+SERVER_EMAIL = 'helloroyaltrip@gmail.com'
 EMAIL_USE_TLS = True
 EMAIL_HOST = 'smtp.gmail.com'
 EMAIL_PORT = 587
-EMAIL_HOST_USER = 'culture.connect.usa@gmail.com'
-EMAIL_HOST_PASSWORD = 'cultureconnect123'
+EMAIL_HOST_USER = 'helloroyaltrip@gmail.com'
+EMAIL_HOST_PASSWORD = 'Manish@123'
 
 # Application definition
 
@@ -55,6 +56,7 @@ INSTALLED_APPS = (
     'django.contrib.staticfiles',
     'tinymce',
     'places',
+
 )
 
 MIDDLEWARE_CLASSES = (
