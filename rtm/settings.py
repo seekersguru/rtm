@@ -93,7 +93,7 @@ WSGI_APPLICATION = 'rtm.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': os.path.join(BASE_DIR, 'rtm.sqlite3'),
+        'NAME': os.path.join(BASE_DIR, 'rtm_new.sqlite3'),
     }
 }
 
