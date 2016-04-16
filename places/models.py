@@ -112,7 +112,7 @@ class IternaryImages(models.Model):
     image = models.ImageField(upload_to='static/placeimages/%Y/%m/%d/%H/%M/%S/')
     iternary = models.ForeignKey(Iternary)
 
-class IternaryEnquiry(models.Model):
+class Enquiry(models.Model):
     name = models.CharField(max_length=128)
     email=models.EmailField(max_length=512)
     mobile=models.IntegerField()
@@ -136,6 +136,12 @@ class Themes(models.Model):
     iternaries=models.ManyToManyField(Iternary)
     url_property = models.CharField(max_length=512,default=1)
     order = models.IntegerField(unique=True,null=True,blank=True)
+    #meta_title = models.CharField(max_length=60, unique=True,default='')
+    #https://www.google.co.in/?gfe_rd=cr&ei=TcNGVobDMqbv8we_moHIAw&gws_rd=ssl#q=meta%20description%20length
+    #meta_description = models.CharField(max_length=160, unique=True,default='')
+    #http://webmasters.stackexchange.com/questions/17740/whats-the-maximum-length-of-the-meta-keywords-tag
+    #no official length requirement but generally you'll see people mention anywhere from 100 to 255 characters. 
+    #meta_keywords = models.CharField(max_length=256, unique=True,default='')
 
     def __str__(self):
         return self.name    
@@ -156,5 +162,32 @@ class ReviewVerified(models.Model):
     trip_name = models.CharField(max_length=128)
     rating = models.CharField(max_length=128)
     comment=models.TextField()
+class GalleryImages(models.Model):
+    image = models.ImageField(upload_to='static/galary/')
+    place=models.ForeignKey(Iternary)
+
+class IternaryEnquiry(models.Model):
+    name = models.CharField(max_length=128)
+    email=models.EmailField(max_length=512)
+    iternaryenquiry=models.EmailField(max_length=512,null=True,blank=True)
+    mobile=models.IntegerField()
+    date=models.DateField()
+    comment=models.TextField()
+
+class VipAccess(models.Model):
+    name = models.CharField(max_length=128)
+    email=models.EmailField(max_length=512)
+    mobile=models.IntegerField()
+    date=models.DateField()
+    comment=models.TextField()
+
+class BestSelling(models.Model):
+    name = models.CharField(max_length=128)
+    order = models.IntegerField(null=True,blank=True)
+    best = models.ForeignKey(Iternary)
+
+
+
+
       
 
