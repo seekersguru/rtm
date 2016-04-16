@@ -39,23 +39,29 @@
 
                         </div>
                         <div id="tab4default" class="tab-pane fade">
-					        <div class="flexslider">
-					          <ul class="slides">
-					            <li data-thumb="img/image-slider001.jpg">
-					              <img src="/static/img/image-slider001.jpg" />
-					            </li>
-					            <li data-thumb="img/image-slider002.jpg">
-					              <img src="/static/img/image-slider002.jpg" />
-					            </li>
-					            <li data-thumb="img/image-slider003.jpg">
-					              <img src="/static/img/image-slider003.jpg" />
-					            </li>
-					            <li data-thumb="img/image-slider004.jpg">
-					              <img src="/static/img/image-slider004.jpg" />
-					            </li>
-					          </ul>
-					        </div>
-                        </div>
+                                 <div id="myCarousel" class="carousel slide" data-ride="carousel">
+	<!-- Indicators -->
+	<ol class="carousel-indicators">
+		<li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+		<li data-target="#myCarousel" data-slide-to="1"></li>
+		<li data-target="#myCarousel" data-slide-to="2"></li>
+		<li data-target="#myCarousel" data-slide-to="3"></li>
+	</ol>
+	<!-- Wrapper for slides -->
+
+<div class="carousel-inner" role="listbox">
+    {% for gallery in gallery %}
+    {% if forloop.counter == 1 %}
+    <div class="item active">
+    {% else %}
+    <div class="item">
+    {% endif %}
+        <img src="{{ gallery.image.url }}" alt="Image">
+    </div>
+    {% endfor %}
+    </div>
+                         </div>
+                        </div>  
                         <div id="tab5default" class="tab-pane fade">
                          <div class="row">
           <div class="col-sm-4">
@@ -66,28 +72,37 @@
 <p><b>Email:</b>  contact@royaltripmaker.com; admin@royaltripmaker.com</p>
 <p><b>Website: </b> www.royaltripmaker.com</p>
           </div>
-         
+
           <div class="col-sm-8">
           <h2>Contact Us
           <span class="yallow-line"> </span></h2>
-          <form>
+          {% if messages %}
+	    <ul class="messages">
+              {% for msg in messages %}     
+               <li>
+                <div class="alert alert-{{msg.level_tag}}" role="alert">
+                 {{msg.message}}
+                </div>
+               </li>
+               {% endfor %}
+            </ul>
+          {% endif %}
+          <form method="post" action="" class="global-form" id="eqform">{% csrf_token %}
         <div class="form-group">
-            <input type="text" class="form-control" id="inputEmail" placeholder="Enter Full Name">
+            <input type="hidden" value="{{iternary.name}}" class="form-control" id="iternaryname" name='iternaryname'>
+            <input type="text" class="form-control" id="name" name='name' placeholder="Enter Full Name" required>
         </div>
 
  <div class="form-group">
-            <input type="Email" class="form-control" id="inputEmail" placeholder="Enter Your Email">
+            <input type="Email" class="form-control" name='email' id="inputEmail" placeholder="Enter Your Email" pattern="[\w\d.+-]+@([\w\d.]+\.)+(com|org|edu)",re.UNICODE | re.VERBOSE)" title="Please Enter Valid Email." required>
         </div>
         <div class="form-group">
-            <input type="phone" class="form-control"  placeholder="Enter Your Mobile Number ">
-        </div>
-       <div class="form-group">
-            <input type="date" class="form-control"  placeholder="Date ">
+            <input type="tel" class="form-control" name="phone" pattern="^\d{10,20}$"  title="Please Enter valid phone no."  placeholder="Enter Your Mobile Number" required >
         </div>
         <div class="form-group">
-        <textarea  col="5" rows="5" class="form-control" placeholder="comment"></textarea>   
+        <textarea  col="5" rows="5" class="form-control" name="comment" placeholder="comment"></textarea>   
         </div>
-        <button type="submit" class="btn btn-primary">submit</button>
+        <button type="submit" name="iternarysubmit" class="btn btn-primary">submit</button>
 
     </form>
     </div>
