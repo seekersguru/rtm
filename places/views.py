@@ -3,16 +3,18 @@ from django.contrib import messages
 from django.core.mail import send_mail
 from django.conf import settings
 from datetime import datetime
-from models import Places,Iternary,Themes,SliderImages,IternaryEnquiry,ReviewVerified
+from models import Places,Iternary,Themes,SliderImages,Enquiry,ReviewVerified,GalleryImages,\
+IternaryEnquiry,VipAccess,BestSelling
 from django.http import JsonResponse
 def index(request,params=None,id=None):
+    iternary=Iternary.objects.all()
     if request.method=='POST':
         name = request.POST['name']
         email = request.POST['email']
         phone =request.POST['phone']
         comment=request.POST['comment']
         #print name,email,phone,comment
-        obj=IternaryEnquiry(name=name,email=email,mobile=phone,comment=comment,date=datetime.now())
+        obj=Enquiry(name=name,email=email,mobile=phone,comment=comment,date=datetime.now())
         obj.save()
         sub="Mail From Royal Trip Maker"
 	msg='From : %s  \n Message : %s'%((email+"   "+"Name :"+name+" "+"Mobile:"+phone),comment)
@@ -26,25 +28,56 @@ def index(request,params=None,id=None):
     return TemplateResponse(request, 'index.html', {"places":Places.objects.all(),
                                                     "themes":Themes.objects.all(),
                                                     "slider":SliderImages.objects.all(),
+                                                    "iternary":iternary,
+                                                    "bestselling":BestSelling.objects.all()
                                                     })
 
 def review_and_verified(request,params=None,id=None):
-    if request.method=='POST':
+    if request.method == 'POST' and 'rewiewbutton' in request.POST:
         data = request.POST
-        rating=data['rating']
+        rating=data['email']
+        #hidden=request.POST['reviewhidden']
         name = request.POST['name']
         city = request.POST['city']
         trip =request.POST['trip']
         comment=request.POST['comment']
         #rating=request.method['rating']
-        #print name,city,trip,comment,rating
+        print name,city,trip,comment,rating
         obj=ReviewVerified(rating=rating,name=name,city=city,trip_name=trip,comment=comment)
         obj.save()
-        messages.success(request, 'Thanks for your Reviews.')   
+        messages.success(request, 'Thanks for your Reviews.') 
+    if request.method=='POST' and 'submitbutton' in request.POST:
+        name = request.POST['name']
+        email = request.POST['email']
+        phone =request.POST['phone']
+        comment=request.POST['comment']
+        #print name,email,phone,comment
+        obj=Enquiry(name=name,email=email,mobile=phone,comment=comment,date=datetime.now())
+        obj.save()
+        sub="Mail From Royal Trip Maker"
+	msg='From : %s  \n Message : %s'%((email+"   "+"Name :"+name+" "+"Mobile:"+phone),comment)
+	frm=email
+	to_us=[settings.EMAIL_HOST_USER]
+	send_mail(sub,msg,frm,to_us,fail_silently=False)
+        messages.success(request, 'Message sent successfully you will recieve a phone call shortly.')
     #return HttpResponse("rs")       
     return TemplateResponse(request, 'review_and_verified.html', {"nav":"review_and_verified"})
 
 def customer_support(request,params=None,id=None):
+    if request.method=='POST':
+        name = request.POST['name']
+        email = request.POST['email']
+        phone =request.POST['phone']
+        comment=request.POST['comment']
+        #print name,email,phone,comment
+        obj=Enquiry(name=name,email=email,mobile=phone,comment=comment,date=datetime.now())
+        obj.save()
+        sub="Mail From Royal Trip Maker"
+	msg='From : %s  \n Message : %s'%((email+"   "+"Name :"+name+" "+"Mobile:"+phone),comment)
+	frm=email
+	to_us=[settings.EMAIL_HOST_USER]
+	send_mail(sub,msg,frm,to_us,fail_silently=False)
+        messages.success(request, 'Message sent successfully you will recieve a phone call shortly.')
     #return HttpResponse("rs")       
     return TemplateResponse(request, 'customer_support.html', {"nav":"customer_support"})
 
@@ -56,12 +89,42 @@ def listing_tour(request,tour_id=None):
         iternaries=Iternary.objects.filter(place=place)
         context["place"]=place
         context["iternaries"]=iternaries
+        if request.method=='POST':
+            name = request.POST['name']
+            email = request.POST['email']
+            phone =request.POST['phone']
+            comment=request.POST['comment']
+            #print name,email,phone,comment
+            obj=Enquiry(name=name,email=email,mobile=phone,comment=comment,date=datetime.now())
+            obj.save()
+            sub="Mail From Royal Trip Maker"
+	    msg='From : %s  \n Message : %s'%((email+"   "+"Name :"+name+" "+"Mobile:"+phone),comment)
+	    frm=email
+	    to_us=[settings.EMAIL_HOST_USER]
+	    send_mail(sub,msg,frm,to_us,fail_silently=False)
+            messages.success(request, 'Message sent successfully you will recieve a phone call shortly.')
+          
     else:
         place=Places.objects.get(url_property=request.get_full_path())
         
         iternaries=Iternary.objects.filter(place=place)
         context["place"]=place
         context["iternaries"]=iternaries
+        if request.method=='POST':
+            name = request.POST['name']
+            email = request.POST['email']
+            phone =request.POST['phone']
+            comment=request.POST['comment']
+            #print name,email,phone,comment
+            obj=Enquiry(name=name,email=email,mobile=phone,comment=comment,date=datetime.now())
+            obj.save()
+            sub="Mail From Royal Trip Maker"
+	    msg='From : %s  \n Message : %s'%((email+"   "+"Name :"+name+" "+"Mobile:"+phone),comment)
+	    frm=email
+	    to_us=[settings.EMAIL_HOST_USER]
+	    send_mail(sub,msg,frm,to_us,fail_silently=False)
+            messages.success(request, 'Message sent successfully you will recieve a phone call shortly.')
+          
 
     return TemplateResponse(request, 'listing_tour.html', context)
 
@@ -77,18 +140,94 @@ def theme_tour(request,theme_id=None):
 
     
 def vip_access(request):
+    if request.method=='POST' and 'vipbutton' in request.POST:
+        name = request.POST['name']
+        email = request.POST['email']
+        phone =request.POST['phone']
+        comment=request.POST['comment']
+        print name,email,phone,comment
+        obj=VipAccess(name=name,email=email,mobile=phone,comment=comment,date=datetime.now())
+        obj.save()
+        sub="Mail From Royal Trip Maker"
+	msg='From : %s  \n Message : %s'%((email+"   "+"Name :"+name+" "+"Mobile:"+phone),comment)
+	frm=email
+	to_us=[settings.EMAIL_HOST_USER]
+	send_mail(sub,msg,frm,to_us,fail_silently=False)
+        messages.success(request, 'Message sent successfully you will recieve a phone call shortly.')
+
+    if request.method=='POST' and 'submitbutton' in request.POST:
+        name = request.POST['name']
+        email = request.POST['email']
+        phone =request.POST['phone']
+        comment=request.POST['comment']
+        #print name,email,phone,comment
+        obj=Enquiry(name=name,email=email,mobile=phone,comment=comment,date=datetime.now())
+        obj.save()
+        sub="Mail From Royal Trip Maker"
+	msg='From : %s  \n Message : %s'%((email+"   "+"Name :"+name+" "+"Mobile:"+phone),comment)
+	frm=email
+	to_us=[settings.EMAIL_HOST_USER]
+	send_mail(sub,msg,frm,to_us,fail_silently=False)
+        messages.success(request, 'Message sent successfully you will recieve a phone call shortly.')
+          
     return TemplateResponse(request, 'vip_access.html', {"nav":"vip_access"})
     
     
 def low_price_guaranteed(request):
+    if request.method=='POST':
+        name = request.POST['name']
+        email = request.POST['email']
+        phone =request.POST['phone']
+        comment=request.POST['comment']
+        #print name,email,phone,comment
+        obj=Enquiry(name=name,email=email,mobile=phone,comment=comment,date=datetime.now())
+        obj.save()
+        sub="Mail From Royal Trip Maker"
+	msg='From : %s  \n Message : %s'%((email+"   "+"Name :"+name+" "+"Mobile:"+phone),comment)
+	frm=email
+	to_us=[settings.EMAIL_HOST_USER]
+	send_mail(sub,msg,frm,to_us,fail_silently=False)
+        messages.success(request, 'Message sent successfully you will recieve a phone call shortly.')
+          
     return TemplateResponse(request, 'low_price_guaranteed.html', {"nav":"low_price_guaranteed"})
 
 
 
 def iternary_detail(request,iternary_id):
     iternary=Iternary.objects.get(url_property=request.get_full_path())
+    if request.method=='POST' and 'submitbutton' in request.POST:
+        name = request.POST['name']
+        email = request.POST['email']
+        phone =request.POST['phone']
+        comment=request.POST['comment']
+        #print name,email,phone,comment
+        obj=Enquiry(name=name,email=email,mobile=phone,comment=comment,date=datetime.now())
+        obj.save()
+        sub="Mail From Royal Trip Maker"
+	msg='From : %s  \n Message : %s'%((email+"   "+"Name :"+name+" "+"Mobile:"+phone),comment)
+	frm=email
+	to_us=[settings.EMAIL_HOST_USER]
+	send_mail(sub,msg,frm,to_us,fail_silently=False)
+        messages.success(request, 'Message sent successfully you will recieve a phone call shortly.')
+    if request.method=='POST' and 'iternarysubmit' in request.POST:
+        name = request.POST['name']
+        iternaryenquiry = request.POST['iternaryname']
+        email = request.POST['email']
+        phone =request.POST['phone']
+        comment=request.POST['comment']
+        #print name,email,phone,comment
+        obj=IternaryEnquiry(name=name,email=email,iternaryenquiry=iternaryenquiry,
+        mobile=phone,comment=comment,date=datetime.now())
+        obj.save()
+        sub="Mail From Royal Trip Maker"
+	msg='From : %s  \n Message : %s'%((email+"   "+"Name :"+name+" "+"Mobile:"+phone),comment)
+	frm=email
+	to_us=[settings.EMAIL_HOST_USER]
+	send_mail(sub,msg,frm,to_us,fail_silently=False)
+        messages.success(request, 'Message sent successfully you will recieve a phone call shortly.')
+          
     
-    return TemplateResponse(request, 'details.html', {"iternary":iternary})
+    return TemplateResponse(request, 'details.html', {"gallery":GalleryImages.objects.all(),"iternary":iternary})
 
 
 def nearest_buses(request):
