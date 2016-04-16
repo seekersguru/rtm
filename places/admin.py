@@ -7,12 +7,17 @@ from django.template.loader import render_to_string
 from django.utils.html import strip_tags
 # Register your models here.
 
-from .models import Places,PlaceImages ,Iternary,IternaryImages,IternaryEnquiry,InfoIternary,Themes,SliderImages,ReviewVerified
+from .models import BestSelling,Places,PlaceImages ,GalleryImages,Iternary,IternaryImages,Enquiry,IternaryEnquiry,VipAccess,InfoIternary,Themes,SliderImages,ReviewVerified
 from django.contrib.auth.models import User, Group
 
 class PlacesAdmin(admin.ModelAdmin):
     model=Places
     list_display = ['name','url_property']
+    ordering=('name',)
+
+class BestSellingAdmin(admin.ModelAdmin):
+    model=BestSelling
+    list_display = ['name','order']
     ordering=('name',)
 
 class IternaryAdmin(admin.ModelAdmin):
@@ -25,8 +30,8 @@ class ThemesAdmin(admin.ModelAdmin):
     list_display = ['name','url_property',] 
     ordering=('name',)  
 
-class IternaryEnquiryAdmin(admin.ModelAdmin):
-    model=IternaryEnquiry
+class EnquiryAdmin(admin.ModelAdmin):
+    model=Enquiry
     list_display = ['name','email']
     ordering=('name',)
     '''actions = ['send_EMAIL']
@@ -50,6 +55,16 @@ class IternaryEnquiryAdmin(admin.ModelAdmin):
         self.message_user(request, "Mail sent successfully ") 
     send_EMAIL.short_description = "Send an email to selected users"'''
 
+class IternaryEnquiryAdmin(admin.ModelAdmin):
+    model=IternaryEnquiry
+    list_display = ['name','iternaryenquiry']
+    ordering=('name',)
+
+class VipAccessAdmin(admin.ModelAdmin):
+    model=VipAccess
+    list_display = ['name','email']
+    ordering=('name',)
+
 class ReviewVerifiedAdmin(admin.ModelAdmin):
     model=ReviewVerified
     list_display = ['trip_name','rating',]
@@ -57,10 +72,14 @@ class ReviewVerifiedAdmin(admin.ModelAdmin):
 # Register your models here.
 admin.site.register(Places,PlacesAdmin)
 admin.site.register(PlaceImages)
+admin.site.register(BestSelling,BestSellingAdmin)
 admin.site.register(ReviewVerified,ReviewVerifiedAdmin)
 admin.site.register(Iternary,IternaryAdmin)
 admin.site.register(IternaryImages)
+admin.site.register(GalleryImages)
+admin.site.register(Enquiry,EnquiryAdmin)
 admin.site.register(IternaryEnquiry,IternaryEnquiryAdmin)
+admin.site.register(VipAccess,VipAccessAdmin)
 admin.site.register(InfoIternary)
 admin.site.register(Themes,ThemesAdmin)
 admin.site.register(SliderImages)
