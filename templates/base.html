@@ -8,7 +8,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="author" content="">
-    <link rel="icon" href="../../favicon.ico">
+    <link rel="icon" type="image/png" href="/static/img/favicon.png">
 
  	<meta name="description" content="{%block meta_description%}Royal trip maker , holiday packages {%endblock%}">
 	<meta name="keywords" content="{%block meta_keywords%}Royal trip maker , holiday packages {%endblock%}">
@@ -24,11 +24,6 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script>
     <script src="/static/js/jquery.flexslider.js"></script>
     <script src="/static/js/jquery.min.1.11.3.js"></script>
-<!-- Place in the <head>, after the three links -->
-<script type="text/javascript" charset="utf-8">
-  $(window).load(function() {
-    $('.flexslider').flexslider();
-  });
 </script>
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!--[if lt IE 9]>
@@ -44,7 +39,7 @@
 </div>
           <div class="top-nav">
             <ul>
-              <li><a href="#" data-toggle="modal" data-target="#myModal">Plan My Trip</a></li>
+              </br><li><a href="#" data-toggle="modal" data-target="#myModal">Plan My Trip</a></li>
               <li><a href="#" data-toggle="modal" data-target="#myModal2">Enquiry</a></li>
             </ul>
           </div>
@@ -111,9 +106,10 @@
 	{%block container %} {% endblock%}
     {%block home_subscribe_section %}{% endblock %}
     {%block book_feed_supp_follow %}{% endblock %}
+    </div>
     <div class="footer">
     {%block footer_tour_ver_sup %}{% endblock %}
-    </div>
+
     <div class="copy-right-sec">
       <div class="container">
         <div class="row">
@@ -126,8 +122,7 @@
         </div>
       </div>
     </div>
-
-    <!--modal box plan trip-->
+ <!--modal box plan trip-->
     <!-- Modal -->
 <div id="myModal" class="modal fade" role="dialog">
   <div class="modal-dialog">
@@ -139,9 +134,9 @@
        <h2>Plan My Trip </h2>
       </div>
       <div class="modal-body">
-    <form>
+    <form>{% csrf_token %}
         <div class="form-group">
-            <input type="text" class="form-control" id="inputEmail" placeholder="name">
+            <input type="text" class="form-control" id="name" pattern="[a-zA-Z0-9]+" minlength=4 name="name" placeholder="Enter Full Name" required>
         </div>
         <div class="form-group"> 
 <div class="row">
@@ -167,7 +162,7 @@
 </div>
 </div>
  <div class="form-group">
-            <input type="date" class="form-control" id="inputEmail" placeholder="Date of Journey">
+            <input type="date" class="form-control" id="inputEmail" placeholder="Date of Journey" required>
         </div>
         <div class="form-group"> 
         <div class="row">
@@ -205,10 +200,10 @@
         </div>
 </div></div>
          <div class="form-group">
-            <input type="phone" class="form-control"  placeholder="Contact Number ">
+            <input type="tel" class="form-control" pattern="^\d{10,20}$"  title="Please Enter valid phone no." id="phone" name="phone" placeholder="Enter Your Mobile Number" required>
         </div>
         <div class="form-group">
-            <input type="email" class="form-control"  placeholder="Email ">
+            <input type="Email" class="form-control" id="email" pattern="[\w\d.+-]+@([\w\d.]+\.)+(com|org|edu)",re.UNICODE | re.VERBOSE)" title="Please Enter Valid Email." name="email" placeholder="Enter Your Email" required>
         </div>
       
 
@@ -240,17 +235,17 @@
       <div class="modal-body">
     <form method="post" action="" class="global-form" id="enq_form">{% csrf_token %}
         <div class="form-group">
-            <input type="text" class="form-control" id="name" name="name" placeholder="Enter Full Name">
+            <input type="text" class="form-control" id="name" pattern="[a-zA-Z0-9]+" minlength=4 name="name" placeholder="Enter Full Name" required>
         </div>
 
  <div class="form-group">
-            <input type="Email" class="form-control" id="email"  name="email" placeholder="Enter Your Email">
+            <input type="Email" class="form-control" id="email" pattern="[\w\d.+-]+@([\w\d.]+\.)+(com|org|edu)",re.UNICODE | re.VERBOSE)" title="Please Enter Valid Email." name="email" placeholder="Enter Your Email" required>
         </div>
   
 
    
         <div class="form-group">
-            <input type="phone" class="form-control" id="phone" name="phone" placeholder="Enter Your Mobile Number ">
+            <input type="tel" class="form-control" pattern="^\d{10,20}$"  title="Please Enter valid phone no." id="phone" name="phone" placeholder="Enter Your Mobile Number" required>
         </div>
       
         <div class="form-group">
@@ -259,7 +254,7 @@
         
       
 
-        <button type="submit" class="btn btn-primary">submit</button>
+        <button type="submit" name="submitbutton" class="btn btn-primary">submit</button>
 
     </form>
 
