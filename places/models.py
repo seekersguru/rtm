@@ -51,6 +51,8 @@ class Places(models.Model):
 class PlaceImages(models.Model):
     image = models.ImageField(upload_to='static/placeimages/%Y/%m/%d/%H/%M/%S/')
     place = models.ForeignKey(Places)
+    def __str__(self):
+        return self.place.name
     ### http://royaltripmaker.com/trip.aspx 
     ## name / description /> show 
     
@@ -165,6 +167,8 @@ class ReviewVerified(models.Model):
 class GalleryImages(models.Model):
     image = models.ImageField(upload_to='static/galary/')
     place=models.ForeignKey(Iternary)
+    def __str__(self):
+        return self.place.name
 
 class IternaryEnquiry(models.Model):
     name = models.CharField(max_length=128)
