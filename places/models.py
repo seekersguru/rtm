@@ -187,7 +187,7 @@ class VipAccess(models.Model):
 
 class BestSelling(models.Model):
     name = models.CharField(max_length=128)
-    order = models.IntegerField(required=True,null=True,blank=True)
+    order = models.IntegerField(unique=True,null=True,blank=True)
     best = models.ForeignKey(Iternary)
 
 
