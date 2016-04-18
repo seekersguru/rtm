@@ -220,7 +220,7 @@ def iternary_detail(request,iternary_id):
         mobile=phone,comment=comment,date=datetime.now())
         obj.save()
         sub="Mail From Royal Trip Maker"
-	msg='From : %s  \n Message : %s'%((email+"   "+"Name :"+name+" "+"Mobile:"+phone),comment)
+	msg='From : %s  \n Enquiry For: %s \n Message : %s'%((email+"   "+"Name :"+name+" "+"Mobile:"+phone),iternaryenquiry,comment)
 	frm=email
 	to_us=[settings.EMAIL_HOST_USER]
 	send_mail(sub,msg,frm,to_us,fail_silently=False)
