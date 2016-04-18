@@ -227,7 +227,7 @@ def iternary_detail(request,iternary_id):
         messages.success(request, 'Message sent successfully you will recieve a phone call shortly.')
           
     
-    return TemplateResponse(request, 'details.html', {"gallery":GalleryImages.objects.all(),"iternary":iternary})
+    return TemplateResponse(request, 'details.html', {"gallery":GalleryImages.objects.filter(place=iternary),"iternary":iternary})
 
 
 def nearest_buses(request):
