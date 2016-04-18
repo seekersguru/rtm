@@ -1,0 +1,336 @@
+{% extends "base.html" %} {% block container %}
+{% load staticfiles %}
+<div class="container">
+	<h1>
+		Top Packages<span class="yallow-line"> </span>
+	</h1>
+	<!-- Main component for a primary marketing message or call to action -->
+	<div class="row">
+		{% for place in places %}
+		<div class="col-sm-4">
+			<div class="pakage-box">
+				<h3><a href="{{place.url_property}}">{{place.name}}</a></h3>
+				<div>
+<a href="{{place.url_property}}"><img src="{{place.main_image}}" class="img-responsive" alt=""></a>
+				</div>
+				<p>
+				<span style="color: #a9a9a9; font-family: 'Open Sans', sans-serif; font-size: 14px; line-height: 24px;">
+				{{place.introduction|safe}}
+				</span>
+				</p>
+				
+			</div>
+		</div>
+		{% endfor %}
+	</div>
+	<h1>
+		Top Themes<span class="yallow-line"> </span>
+	</h1>
+
+	<div class="row">
+<div class="pre-scrollable">
+		{% for place in themes %}
+		<div class="col-sm-3">
+			<div class="pakage-box">
+				<h3><a href="{{place.url_property}}">{{place.name}}</a></h3>
+				<div>
+<a href="{{place.url_property}}"><img src="{{place.main_image}}" class="img-responsive" alt=""></a>
+				</div>
+				<p>
+				<span style="color: #a9a9a9; font-family: 'Open Sans', sans-serif; font-size: 14px; line-height: 24px;">
+				{{place.introduction|safe}}
+				</span>
+				</p>
+				
+			</div>
+		</div>
+		{% endfor %}
+	</div>	
+</div>
+	
+	<div class="royaltrip-maker">
+		<h2>
+			Why to choose Royal Trip Maker ?<span class="yallow-line-2"> </span>
+		</h2>
+		<p style="color:black;">You are at the best place, as we are the providers of
+			travelling, trekking, glamping and lots of information to the most
+			exquisite locations in India right from the Himalayas in the north to
+			backwaters at Kerala, Sunderbans in the east to Rann of Kutch in the
+			west.</p>
+		<p style="color:black;">We are an innovative, forward thinking company that recognizes
+			the need to move with ever-changing customer needs and that’s why our
+			philosophy is one that emphasizes service, and a realization that
+			effective communication is a key component in our business.And now we
+			are emerging as the best providers for wildlife, adventure,pilgrimage
+			and trekking trips in India.</p>
+	</div>
+	<div class="hotdistance-sec">
+		<h2>
+			Hot Destinations<span class="yallow-line"> </span>
+		</h2>
+		<div class="row">
+			<div class="pull-right">
+				<!-- Controls -->
+				<div class="controls pull-right ">
+					<a data-slide="next" href="#carousel-example" class="right "><img
+						alt="" src="/static/img/new-left-arrow.jpg"> </a> <a
+						data-slide="prev" href="#carousel-example" class="left"><img
+						alt="" src="/static/img/new-right-arrow.jpg"> </a>
+				</div>
+			</div>
+		</div>
+		<div data-ride="carousel" class="carousel slide "
+			id="carousel-example">
+			<!-- Wrapper for slides -->
+			<div class="carousel-inner">
+
+				<div class="item active">
+					 
+					<div class="row">
+{% for bestsellings in bestselling %}
+    {%if bestsellings.order <= 4 %} 
+						<div class="col-lg-3 col-md-3 col-sm-3">
+
+							<div class="hotdistance-box">
+                                                            
+								<div>
+
+									
+                                                <a href="{{bestsellings.best.url_property}}"> <img src="/{{bestsellings.best.main_image}}" class="img-responsive" alt=""></a>
+								</div>
+		<a href="{{bestsellings.best.url_property}}"><h4>{{bestsellings.best.name}}</h4></a>
+                                                                                                                                    							
+
+							</div>
+
+						</div>
+{% endif %}
+						{% endfor %}
+						</div>
+
+					</div>
+				
+				<div class="item">
+					 
+					<div class="row">
+{% for bestsellings in bestselling %}
+    {%if bestsellings.order > 4 and bestsellings.order <= 8 %} 
+
+						<div class="col-lg-3 col-md-3 col-sm-3">
+
+							<div class="hotdistance-box">
+                                                            
+								<div>
+
+									
+                                            <a href="{{bestsellings.best.url_property}}"><img src="/{{bestsellings.best.main_image}}" class="img-responsive" alt=""></a>
+								</div>
+		<a href="{{bestsellings.best.url_property}}"><h4>{{bestsellings.best.name}}</h4></a>
+                                                                                                                                    							
+
+							</div>
+
+						</div>
+{% endif %}
+						{% endfor %}
+						</div>
+
+					</div>
+				
+				
+                              </div>
+                                     
+							
+	               </div>
+	<h2>
+		Why to choose Royal Trip Maker ?<span class="yallow-line-2"> </span>
+	</h2>
+	<div class='row'>
+		<div class='col-md-12'>
+			<div class="carousel slide" data-ride="carousel" id="quote-carousel">
+				<!-- Bottom Carousel Indicators -->
+				<ol class="carousel-indicators">
+					<li data-target="#quote-carousel" data-slide-to="0" class="active"></li>
+					<li data-target="#quote-carousel" data-slide-to="1"></li>
+					<li data-target="#quote-carousel" data-slide-to="2"></li>
+				</ol>
+				<!-- Carousel Slides / Quotes -->
+				<div class="carousel-inner">
+					<!-- Quote 1 -->
+					<div class="item active">
+						<div>
+							<div class="testmonail-img">
+								<img class="img-circle" src="/static/img/test-monail-img.jpg">
+							</div>
+							<div class="testmonail-content">
+								<p style="color:black;">"Lorem Ipsum is simply dummy text of the printing and
+									typesetting industry. Lorem Ipsum has been the industry's
+									standard dummy text ever since the 1500s, when an unknown
+									printer took a galley of type and scrambled it to make a type
+									specimen book. It has survived not only five centuries, Lorem
+									Ipsum is simply dummy text of the printing and typesetting
+									industry. Lorem Ipsum has been the industry's standard dummy
+									text ever since the 1500s, "</p>
+								<div class="author">Dhruv singh chaudhary</div>
+							</div>
+						</div>
+					</div>
+					<!-- Quote 2 -->
+					<div class="item">
+						<div>
+							<div class="testmonail-img">
+								<img class="img-circle" src="/static/img/test-monail-img.jpg">
+							</div>
+							<div class="testmonail-content">
+								<p style="color:black;">"Lorem Ipsum is simply dummy text of the printing and
+									typesetting industry. Lorem Ipsum has been the industry's
+									standard dummy text ever since the 1500s, when an unknown
+									printer took a galley of type and scrambled it to make a type
+									specimen book. It has survived not only five centuries, Lorem
+									Ipsum is simply dummy text of the printing and typesetting
+									industry. Lorem Ipsum has been the industry's standard dummy
+									text ever since the 1500s, "</p>
+								<div class="author">Dhruv singh chaudhary</div>
+							</div>
+						</div>
+					</div>
+					<!-- Quote 3 -->
+					<div class="item">
+						<div>
+							<div class="testmonail-img">
+								<img class="img-circle" src="/static/img/test-monail-img.jpg">
+							</div>
+							<div class="testmonail-content">
+								<p style="color:black;">"Lorem Ipsum is simply dummy text of the printing and
+									typesetting industry. Lorem Ipsum has been the industry's
+									standard dummy text ever since the 1500s, when an unknown
+									printer took a galley of type and scrambled it to make a type
+									specimen book. It has survived not only five centuries, Lorem
+									Ipsum is simply dummy text of the printing and typesetting
+									industry. Lorem Ipsum has been the industry's standard dummy
+									text ever since the 1500s, "</p>
+								<div class="author">Dhruv singh chaudhary</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- Carousel Buttons Next/Prev -->
+				<a data-slide="prev" href="#quote-carousel"
+					class="left carousel-control"><img
+					src="/static/img/arrow-left-test-slider.png" alt=""> </a> <a
+					data-slide="next" href="#quote-carousel"
+					class="right carousel-control"><img
+					src="/static/img/arrow-right-test-slider.png" alt=""> </a>
+			</div>
+		</div>
+	</div>
+</div>
+<!-- /container -->
+
+{% endblock %} {%block image_gallery %}
+<div id="myCarousel" class="carousel slide" data-ride="carousel">
+	<!-- Indicators -->
+	<ol class="carousel-indicators">
+		<li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+		<li data-target="#myCarousel" data-slide-to="1"></li>
+		<li data-target="#myCarousel" data-slide-to="2"></li>
+		<li data-target="#myCarousel" data-slide-to="3"></li>
+	</ol>
+	<!-- Wrapper for slides -->
+
+<div class="carousel-inner" role="listbox">
+    {% for slider in slider %}
+    {% if forloop.counter == 1 %}
+    <div class="item active">
+    {% else %}
+    <div class="item">
+    {% endif %}
+        <img src="{{ slider.image.url }}" alt="Image">
+    </div>
+    {% endfor %}
+    </div>
+</div>
+{% endblock %} {%block home_subscribe_section %}
+<section id="newslatter" data-speed="6" data-type="background">
+	<div class="container">
+		<h4>Subscribe to Our Newsletter and Join</h4>
+		<p>15,000 + Subscribers</p>
+		<form class="form-search" method="get" id="s" action="/">
+			<div class="input-append">
+				<input type="text" class="input-medium search-query" name="s"
+					placeholder="Search" value="">
+				<button type="submit" class="btn add-on">Subscribe</button>
+			</div>
+	</div>
+</section>
+{% endblock %} {%block book_feed_supp_follow %}
+<div class="container">
+	<div class="social-sec row-mar30">
+		<div class="row">
+			<div class="col-sm-3">
+				<h5>Book by Phone</h5>
+				<div class="blue">
+					<i class="fa fa-phone"></i><a href="#">91 7676 440044</a>
+				</div>
+			</div>
+			<div class="col-sm-3">
+				<h5>Give your Feedback</h5>
+				<div class="blue">
+					<i class="fa fa-envelope"></i>contact@royaltripmaker.com
+				</div>
+			</div>
+			<div class="col-sm-3">
+				<h5>Services and Support</h5>
+				<div class="blue">
+					<i class="fa fa-headphones"></i> Monday - Sunday: 8 am - 8 pm IST
+				</div>
+			</div>
+			<div class="col-sm-3">
+				<h5>Follow us</h5>
+				<div class="social-link">
+					<ul>
+						<li><a href="#"><i class="fa fa-facebook"></i> </a></li>
+						<li><a href="#"><i class="fa fa-twitter"></i> </a></li>
+						<li><a href="#"><i class="fa fa-google"></i> </a></li>
+						<li><a href="#"><i class="fa fa-youtube"></i> </a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+{% endblock %} {%block footer_tour_ver_sup %}
+<div class="container">
+	<ul class="clearfix">
+		<li><a href="listing-tour">TOURS </a></li>
+		</li>
+		<li><a href="reviewed-and-verified">VERIFIED </a></li>
+		<li><a href="customer-support">SUPPORT </a></li>
+	</ul>
+	<div class="row">
+		<div class="col-sm-9">
+			<p style="color:black;">Lorem Ipsum is simply dummy text of the printing and
+				typesetting industry. Lorem Ipsum has been the industry's standard
+				dummy text ever since the 1500s, when an unknown printer took a
+				galley of type and scrambled it to make a type specimen book. It has
+				survived not only five centuries, but also the leap into electronic
+				typesetting, remaining essentially unchanged. It was popularised in
+				the 1960s with the release of Letraset sheets containing Lorem Ipsum
+				passages, and more recently with desktop publishing software like
+				Aldus PageMaker including versions of Lorem Ipsum.</p>
+		</div>
+		<div class="col-sm-3">
+			<div>
+				<img src="/static/img/footer-logo.jpg" class="img-responsive" alt="">
+			</div>
+		</div>
+	</div>
+</div>
+{% endblock %}
+<!-- Place in the <head>, after the three links -->
+<script type="text/javascript" charset="utf-8">
+  $(window).load(function() {
+    $('.flexslider').flexslider();
+  });
+</script>
