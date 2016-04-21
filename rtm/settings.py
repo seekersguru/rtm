@@ -93,7 +93,7 @@ WSGI_APPLICATION = 'rtm.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': os.path.join(BASE_DIR, 'rtm_new.sqlite3'),
+        'NAME': os.path.join(BASE_DIR, 'rtm1.sqlite3'),
     }
 }
 
@@ -115,7 +115,7 @@ USE_TZ = True
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/1.8/howto/static-files/
 
-MEDIA_URL='http://localhost:8000/' # during live chage url to original url  
+MEDIA_URL='http://54.201.139.103/' # during live chage url to original url  
 
 #STATIC_ROOT = 'staticfiles'
 STATIC_URL = '/static/'
