@@ -181,6 +181,21 @@ body {
     text-transform: uppercase;
     color: #767676;
 }
+.overlay { 
+  color:#fff;
+  position:absolute;
+  z-index:1;
+  top:50%;
+  left:0;
+  width:100%;
+  text-align:center;
+  border:0
+ }
+.input[type=text] { width: 40%; box-sizing: border-box; color:black; height: 35px; }
+.input1[type=text] { box-sizing: border-box; color:black; height: 30px; }
+p.italic {
+    font-style: italic;
+}
 .handpicked ul li h6 {
     font-size: 14px;
     color: #a9a9a9;
