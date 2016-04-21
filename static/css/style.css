@@ -188,6 +188,13 @@ body {
 p.italic {
     font-style: italic;
 }
+p.oblique {
+    font-style: oblique;
+}
+p.ex2 {
+    font: italic bold 12px/30px Georgia, serif;
+    color: #800000;
+}
 .handpicked ul li h4 {
     font-size: 24px;
     padding: 12px 0px 0 0;
