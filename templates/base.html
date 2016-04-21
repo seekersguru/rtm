@@ -1,0 +1,482 @@
+{% load staticfiles %}
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="author" content="">
+    <link rel="icon" type="image/png" href="/static/img/favicon%20.png">
+
+ 	<meta name="description" content="{%block meta_description%}Royal trip maker , holiday packages {%endblock%}">
+	<meta name="keywords" content="{%block meta_keywords%}Royal trip maker , holiday packages {%endblock%}">
+    <title>{%block meta_title%}Royal trip maker{%endblock%}</title>
+
+    
+    <!-- Bootstrap core CSS -->
+    <link href="/static/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="/static/font-awesome-4.4.0/css/font-awesome.min.css" />
+    <link rel="stylesheet" href="/static/css/flexslider.css" type="text/css" media="screen" />
+    <link href="/static/css/style.css" rel="stylesheet">
+    <link rel="stylesheet" href="/static/css/flexslider.css" type="text/css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script>
+    <script src="/static/js/jquery.flexslider.js"></script>
+    <script src="/static/js/jquery.min.1.11.3.js"></script>
+   
+   
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+    <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+
+    <div class="header-part">
+      <div class="top-bar clearfix">
+        <div class="container">
+          <div class="call-us"><b>Contact Us:</br> Email ID – contact@royaltripmaker.com </br>Phone number – +91-9570029090, 8235178592<b>
+</div>
+
+        <div class="top-nav">
+           </br> <ul>
+<li><form method="get">{% csrf_token %}
+<input type="searchfield" name ="q" id="q" placeholder="Search" minlength=2 required>
+<button type="submit" name="search" class="btn btn-primary">submit</button>
+</form>
+</li>
+    
+           <li><a href="#" data-toggle="modal" data-target="#myModal">Plan My Trip</a></li>
+              <li><a href="#" data-toggle="modal" data-target="#myModal2">Enquiry</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <!-- Fixed navbar -->
+      <nav class="navbar navbar-royaltrip">
+        <div class="container">
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            </button>
+            </br><a class="navbar-brand" href="/"><img src="{% static 'img/logo.png' %}" alt="">
+            </a>
+          </div>
+          <div id="navbar" class="navbar-collapse collapse">
+         {% if messages %}
+	    <ul class="messages">
+              {% for msg in messages %}     
+               <li>
+                <div class="alert alert-{{msg.level_tag}}" role="alert">
+                 {{msg.message}}
+                </div>
+               </li>
+               {% endfor %}
+            </ul>
+          {% endif %}
+            <ul class="nav navbar-nav navbar-right">
+              <li {% ifequal nav "listing_tour"%} class="active" {% endifequal %}><a href="/listing-tour/">
+                HANDPICKED
+                <span>TOURS & ACTIVITIES</span>
+                </a>
+              </li>
+              <li {% ifequal nav "review_and_verified"%} class="active" {% endifequal %}><a href="/reviewed-and-verified/">
+                VERIFIED
+                <span>REVIEWS & PHOTOS</span>
+                </a>
+              </li>
+              <li {% ifequal nav "vip_access"%} class="active" {% endifequal %}><a href="/vip-access/"> 
+                VIP
+                <span>ACCESS</span>
+                </a>
+              </li>
+              <li {% ifequal nav "low_price_guaranteed"%} class="active" {% endifequal %}><a href="/low-price-guaranteed/"> 
+                LOW PRICES
+                <span>GUARANTEED</span>
+                 </a>
+              </li>
+              <li {% ifequal nav "customer_support"%} class="active" {% endifequal %}><a href="/customer-support/"> 
+              24/7 SUPPORT
+              <span>WITH A LIVE PERSON</span>
+              </a>
+              </li>
+            </ul>
+          </div>
+          <!--/.nav-collapse -->
+        </div>
+      </nav>
+	 {%block image_gallery %}{% endblock %}
+    </div>
+	{%block container %} {% endblock%}
+    {%block home_subscribe_section %}{% endblock %}
+    {%block book_feed_supp_follow %}{% endblock %}
+    </div>
+    <div class="footer">
+    {%block footer_tour_ver_sup %}{% endblock %}
+
+    <div class="copy-right-sec">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-8">
+            <p></p>
+          </div>
+          <div class="col-sm-4 cookies">
+            <p>© 2015 RoyalTripmakers. All rights reserved .</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+ <!--modal box plan trip-->
+    <!-- Modal -->
+<div id="myModal" class="modal fade" role="dialog">
+  <div class="modal-dialog">
+
+    <!-- Modal content-->
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+       <h2>Plan My Trip </h2>
+      </div>
+      <div class="modal-body">
+ <form method="get" action=" " class="global-form" id="planform">
+        <div class="form-group">
+            <input type="text" class="form-control" id="name1" name='name1' pattern="[a-zA-Z0-9]+" minlength=4 name="name" placeholder="Enter Full Name" required>
+        </div>
+        <div class="form-group"> 
+<div class="row">
+<div class="col-sm-6">
+                 
+<select class="form-control" name='to1' id='to1'>
+	<option selected="selected" value="To">To</option>
+	<option value="New delhi">New delhi</option>
+	<option value="Chandigarh">Chandigarh</option>
+	<option value="Chamba">Chamba</option>
+	<option value=" Kangra"> Kangra</option>
+	<option value=" Una"> Una</option>
+	<option value=" Lahaul "> Lahaul </option>
+	<option value=" Spiti"> Spiti</option>
+	<option value=" Kullu"> Kullu</option>
+	<option value="Manali">Manali</option>
+	<option value="Kheerganga">Kheerganga</option>
+	<option value="Gulmarg &amp; Sonamarg">Gulmarg &amp; Sonamarg</option>
+	<option value="Leh &amp;Ladakh">Leh &amp;Ladakh</option>
+	<option value="Kailash Mansarovar">Kailash Mansarovar</option>
+	<option value=" Mandi"> Mandi</option>
+	<option value=" Hamirpur"> Hamirpur</option>
+	<option value=" Bilaspur"> Bilaspur</option>
+	<option value=" Solan"> Solan</option>
+	<option value="Kinnaur">Kinnaur</option>
+	<option value="Kufri">Kufri</option>
+	<option value=" Shimla"> Shimla</option>
+	<option value=" Sirmour"> Sirmour</option>
+	<option value="Dehradun">Dehradun</option>
+	<option value="Mussoorie">Mussoorie</option>
+	<option value="Haridwar">Haridwar</option>
+	<option value="trip">trip</option>
+	<option value="Nainital">Nainital</option>
+	<option value="Rudraprayag">Rudraprayag</option>
+	<option value="New Tehri">New Tehri</option>
+	<option value="Uttarkashi">Uttarkashi</option>
+	<option value="Champawat">Champawat</option>
+	<option value="Pithoragarh">Pithoragarh</option>
+	<option value="Rudrapur">Rudrapur</option>
+	<option value="Lansdowne">Lansdowne</option>
+	<option value="Dhanaulti">Dhanaulti</option>
+	<option value="Chamba">Chamba</option>
+	<option value="Auli">Auli</option>
+	<option value="Pauri">Pauri</option>
+	<option value="Chopta">Chopta</option>
+	<option value="Chakrata">Chakrata</option>
+	<option value="Kausani">Kausani</option>
+	<option value="Almora">Almora</option>
+	<option value="Ranikhet">Ranikhet</option>
+	<option value="Binsar">Binsar</option>
+	<option value="Mukteshwar">Mukteshwar</option>
+	<option value="Jageshwar">Jageshwar</option>
+	<option value="Corbett">Corbett</option>
+	<option value="Bhimtal">Bhimtal</option>
+	<option value="Garhwal Holiday Tour Packages">Garhwal Holiday Tour Packages</option>
+	<option value="Kumaoun  Holiday Tour Packages">Kumaoun  Holiday Tour Packages</option>
+	<option value="Char Dham Yatra">Char Dham Yatra</option>
+	<option value="Badrinath">Badrinath</option>
+	<option value="Kedarnath">Kedarnath</option>
+	<option value="Joshimath">Joshimath</option>
+	<option value="Gangotri">Gangotri</option>
+	<option value="Yamunotri">Yamunotri</option>
+	<option value="Agra">Agra</option>
+	<option value="Jaipur">Jaipur</option>
+	<option value="Jaisalmer">Jaisalmer</option>
+	<option value="Jodhpur">Jodhpur</option>
+	<option value="Ajmer">Ajmer</option>
+	<option value="Udaipur">Udaipur</option>
+	<option value="Ahmedabad">Ahmedabad</option>
+	<option value="Mathura">Mathura</option>
+	<option value="Vrindavan">Vrindavan</option>
+	<option value="Amritsar">Amritsar</option>
+	<option value="Vaishno Devi">Vaishno Devi</option>
+	<option value="Jammu">Jammu</option>
+
+      </select>
+        </div>
+       
+        <div class="col-sm-6">
+         <select class="form-control" name='fr1' id='fr1'>
+<option selected="selected" value="From">From</option>
+	<option value="Please select">Please select</option>
+	<option value="New delhi">New delhi</option>
+	<option value="Chandigarh">Chandigarh</option>
+	<option value="Chamba">Chamba</option>
+	<option value="Kangra">Kangra</option>
+	<option value="Una">Una</option>
+	<option value="Lahaul ">Lahaul </option>
+	<option value="Spiti">Spiti</option>
+	<option value="Kullu">Kullu</option>
+	<option value="Manali">Manali</option>
+	<option value="Kheerganga">Kheerganga</option>
+	<option value="Gulmarg &amp; Sonamarg">Gulmarg &amp; Sonamarg</option>
+	<option value="Leh &amp;Ladakh">Leh &amp;Ladakh</option>
+	<option value="Kailash Mansarovar">Kailash Mansarovar</option>
+	<option value="Mandi">Mandi</option>
+	<option value="Hamirpur">Hamirpur</option>
+	<option value="Bilaspur">Bilaspur</option>
+	<option value="Solan">Solan</option>
+	<option value="Kinnaur">Kinnaur</option>
+	<option value="Kufri">Kufri</option>
+	<option value="Shimla">Shimla</option>
+	<option value="Sirmour">Sirmour</option>
+	<option value="Dehradun">Dehradun</option>
+	<option value="Mussoorie">Mussoorie</option>
+	<option value="Haridwar">Haridwar</option>
+	<option value="trip">trip</option>
+	<option value="Nainital">Nainital</option>
+	<option value="Rudraprayag">Rudraprayag</option>
+	<option value="New Tehri">New Tehri</option>
+	<option value="Uttarkashi">Uttarkashi</option>
+	<option value="Champawat">Champawat</option>
+	<option value="Pithoragarh">Pithoragarh</option>
+	<option value="Rudrapur">Rudrapur</option>
+	<option value="Lansdowne">Lansdowne</option>
+	<option value="Dhanaulti">Dhanaulti</option>
+	<option value="Chamba">Chamba</option>
+	<option value="Auli">Auli</option>
+	<option value="Pauri">Pauri</option>
+	<option value="Chopta">Chopta</option>
+	<option value="Chakrata">Chakrata</option>
+	<option value="Kausani">Kausani</option>
+	<option value="Almora">Almora</option>
+	<option value="Ranikhet">Ranikhet</option>
+	<option value="Binsar">Binsar</option>
+	<option value="Mukteshwar">Mukteshwar</option>
+	<option value="Jageshwar">Jageshwar</option>
+	<option value="Corbett">Corbett</option>
+	<option value="Bhimtal">Bhimtal</option>
+	<option value="Garhwal Holiday Tour Packages">Garhwal Holiday Tour Packages</option>
+	<option value="Kumaoun Holiday Tour Packages">Kumaoun Holiday Tour Packages</option>
+	<option value="Char Dham Yatra">Char Dham Yatra</option>
+	<option value="Badrinath">Badrinath</option>
+	<option value="Kedarnath">Kedarnath</option>
+	<option value="Joshimath">Joshimath</option>
+	<option value="Gangotri">Gangotri</option>
+	<option value="Yamunotri">Yamunotri</option>
+	<option value="Agra">Agra</option>
+	<option value="Jaipur">Jaipur</option>
+	<option value="Jaisalmer">Jaisalmer</option>
+	<option value="Jodhpur">Jodhpur</option>
+	<option value="Ajmer">Ajmer</option>
+	<option value="Udaipur">Udaipur</option>
+	<option value="Ahmedabad">Ahmedabad</option>
+	<option value="Mathura">Mathura</option>
+	<option value="Vrindavan">Vrindavan</option>
+	<option value="Amritsar">Amritsar</option>
+	<option value="Vaishno Devi">Vaishno Devi</option>
+	<option value="Jammu">Jammu</option>
+
+      </select>
+     
+        </div>
+</div>
+</div>
+ <div class="form-group">
+            <input type="date" class="form-control" name='date1' id="date1" placeholder="Date of Journey" required>
+        </div>
+        <div class="form-group"> 
+        <div class="row">
+           
+<div class="col-sm-6">
+              
+<select class="form-control" name='mode_of_tranport1' id='mode_of_tranport1' required>
+	<option selected="selected" value="Mode of Transport">Mode of Transport</option>
+	<option value="Toyota Innova">Toyota Innova</option>
+	<option value="Chevrolet Tavera">Chevrolet Tavera</option>
+	<option value="Mahindra Bolero">Mahindra Bolero</option>
+	<option value="Tata Indica">Tata Indica</option>
+	<option value="Ambassador">Ambassador</option>
+	<option value="Tempo Traveller">Tempo Traveller</option>
+	<option value="20 seater Bus">20 seater Bus</option>
+
+      </select>
+      
+ </div>
+<div class="col-sm-6">
+   <select class="form-control" name='no_of_passenger1' id='no_of_passenger1' required>
+	<option selected="selected" value="Number of Passengers">Number of Passengers</option>
+	<option value="1">1</option>
+	<option value="2">2</option>
+	<option value="3">3</option>
+	<option value="4">4</option>
+	<option value="5">5</option>
+	<option value="6">6</option>
+	<option value="7">7</option>
+	<option value="8">8</option>
+	<option value="9">9</option>
+	<option value="10 or more">10 or more</option>
+
+   </select>
+       
+        </div>
+        </div>
+</div>
+<div class="form-group">
+     <div class="row">
+<div class="col-sm-12">
+         <select class="form-control" name='discount_criteria1' id='discount_criteria1' required>
+	<option selected="selected" value="Discount Criteria">Discount Criteria</option>
+	<option value="Senior citizen(60+)">Senior citizen(60+)</option>
+	<option value="Ladies">Ladies</option>
+	<option value="Royal Tripmaker Coupon">Royal Tripmaker Coupon</option>
+
+      </select>
+  </div>
+</div></div>
+         <div class="form-group">
+            <input type="tel" class="form-control" pattern="^\d{10,20}$"  title="Please Enter valid phone no." id="phone1" name="phone1" placeholder="Enter Your Mobile Number" required>
+        </div>
+        <div class="form-group">
+            <input type="Email" class="form-control" id="email1" pattern="[\w\d.+-]+@([\w\d.]+\.)+(com|org|edu)",re.UNICODE | re.VERBOSE)" title="Please Enter Valid Email." name="email1" placeholder="Enter Your Email" required>
+        </div>
+      
+
+        <button type="submit" name="planmybutton" class="btn btn-primary">submit</button>
+
+    </form>
+
+
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<!--modal box Enquery-->
+    <!-- Modal -->
+<div id="myModal2" class="modal fade" role="dialog">
+  <div class="modal-dialog">
+
+    <!-- Modal content-->
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+       <h2>Enquire Here  </h2>
+      </div>
+      <div class="modal-body">
+    <form method="post" action="" class="global-form" id="enq_form">{% csrf_token %}
+        <div class="form-group">
+            <input type="text" class="form-control" id="name" pattern="[a-zA-Z0-9]+" minlength=4 name="name" placeholder="Enter Full Name" required>
+        </div>
+
+ <div class="form-group">
+            <input type="Email" class="form-control" id="email" pattern="[\w\d.+-]+@([\w\d.]+\.)+(com|org|edu)",re.UNICODE | re.VERBOSE)" title="Please Enter Valid Email." name="email" placeholder="Enter Your Email" required>
+        </div>
+  
+
+   
+        <div class="form-group">
+            <input type="tel" class="form-control" pattern="^\d{10,20}$"  title="Please Enter valid phone no." id="phone" name="phone" placeholder="Enter Your Mobile Number" required>
+        </div>
+      
+        <div class="form-group">
+        <textarea  col="5" rows="5" class="form-control" id="comment" name="comment" placeholder="comment" required></textarea>   
+        </div>
+        
+      
+
+        <button type="submit" name="submitbutton" class="btn btn-primary">submit</button>
+
+    </form>
+
+
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+
+  </div>
+</div>
+    <!-- Bootstrap core JavaScript
+      ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="{% static 'js/jquery.min.1.11.3.js' %}"></script>
+    <script src="{% static 'js/bootstrap.min.js' %}"></script>
+    <script>
+      $(document).ready(function() {
+          // cache the window object
+          $window = $(window);
+      
+          $('section[data-type="background"]').each(function() {
+              // declare the variable to affect the defined data-type
+              var $scroll = $(this);
+      
+              $(window).scroll(function() {
+                  // HTML5 proves useful for helping with creating JS functions!
+                  // also, negative value because we're scrolling upwards                             
+                  var yPos = -($window.scrollTop() / $scroll.data('speed'));
+      
+                  // background position
+                  var coords = '50% ' + yPos + 'px';
+      
+                  // move the background
+                  $scroll.css({
+                      backgroundPosition: coords
+                  });
+              }); // end window scroll
+          }); // end section function
+      }); // close out script
+/* form validation plugin */
+
+     $(document).on('submit','#enq_form' function(e){
+         e.prevenDefault();
+         $.ajax({ 
+            type:'POST'
+            url:''
+            data:{
+              name:$('#name').val(),
+              email:$('#email').val(),
+              phone:$('#phone').val(),
+              comment:$('#comment').val(),
+              csrfmiddelwaretoken:$('input[name=csrfmiddelwaretoken]').val(),
+             },
+             sucess:function(){
+                 alert("SSUUCCEESS");
+              }
+             });
+     });
+</script>
+
+
+
+
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <script src="http://getbootstrap.com/assets/js/ie10-viewport-bug-workaround.js"></script>
+  </body>
+</html>
+
