@@ -1,0 +1,264 @@
+{% extends "base.html" %} 
+{%block meta_keywords%}nishu{{place.meta_keywords}}{%endblock%}
+{%block meta_description%}{{place.meta_description}}{%endblock%}
+{%block meta_title%}{{place.meta_title}}{%endblock%}
+
+
+<div class="container">
+	<h1>
+	{{result.name}}<span class="yallow-line"> </span>
+	</h1>
+	<div class="row">
+		<div class="col-sm-9" >
+			<p>{{result.introduction|safe}}</p>
+			<p>&nbsp;</p>
+			
+
+		</div>
+
+		<div class="col-sm-3">
+
+		</div>
+	</div>
+</div>
+{% block container %}
+<div class="container">
+	<h1>
+	{{place.name}}<span class="yallow-line"> </span>
+	</h1>
+	<div class="row">
+		<div class="col-sm-9" >
+			<p>{{place.introduction|safe}}</p>
+			<p>&nbsp;</p>
+			
+
+		</div>
+
+		<div class="col-sm-3">
+
+		</div>
+	</div>
+	
+{% if searchs %}
+<div class="container">
+<div class="row">
+		<div class="col-sm-12">
+		
+{%for search in searchs %}	
+			<div class="tour-listing-box">
+				<div class="row">
+					<div class="col-sm-4">
+						<div>
+		<a href="{{search.url_property}}"><img src="/{{search.main_image}}" class="img-responsive" alt=""></a>
+						</div>
+					</div>
+					<div class="col-sm-8">
+						<div class="row">
+							<div class="col-sm-9">
+	<a href="{{search.url_property}}"><h3>{{search}}</h3></a>
+							</div>
+							<div class="col-sm-3">
+								<div class="day-night">{{search.duration}}</div>
+							</div>
+						</div>
+						<p>{{search.introduction|safe}}</p>
+
+						<div class="row tour-btn-mar">
+							<div class="col-md-4">
+								<div class="price">Price :{{search.price}}/-</div>
+							</div>
+							<div class="col-md-8">
+								<div class="ipad-bt-mar">
+									<a href="{{search.url_property}}"><button class="btn btn-primary"
+											type="submit">View Details</button></a>
+									<button class="btn btn-success" type="submit"
+										data-toggle="modal" data-target="#myModal2">Enquire
+										Now</button>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+{% endfor  %}
+
+	</div>
+
+</div>
+{% endif %}
+{% if noresult %}
+<div class="container">
+<div class="row">
+		<div class="col-sm-12">
+		
+		<div class="tour-listing-box">
+				<div class="row">
+					<div class="col-sm-4">
+						<div>
+                                                
+						</div>
+					</div>
+					<div class="col-sm-8">
+						<div class="row">
+							<div class="col-sm-9">
+	<div class="day-night">{{noresult}}</div>
+							</div>
+							<div class="col-sm-3">
+								
+							</div>
+						</div>
+						
+
+						<div class="row tour-btn-mar">
+							<div class="col-md-4">
+								<div><h3>Please Try Another Search</h3></div>
+							</div>
+							
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+
+	</div>
+
+</div>
+{% endif %}
+{% if thanks %}
+<div class="container">
+<div class="row">
+		<div class="col-sm-12">
+		
+		<div class="tour-listing-box">
+				<div class="row">
+					<div class="col-sm-4">
+						<div>
+                                                
+						</div>
+					</div>
+					<div class="col-sm-8">
+						<div class="row">
+							<div class="col-sm-9">
+	<div class="day-night">{{thanks}}</div>
+							</div>
+							<div class="col-sm-3">
+								
+							</div>
+						</div>
+						
+
+						<div class="row tour-btn-mar">
+							<div class="col-md-4">
+								<div><h3>Message sent successfully</h3></div>
+							</div>
+							
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+
+	</div>
+
+</div>
+{% endif %}	
+	
+		
+	
+	
+	<!-- Main component for a primary marketing message or call to action -->
+	<div class="row">
+		<div class="col-sm-12">
+		
+{%for iternary in iternaries %}	
+			<div class="tour-listing-box">
+				<div class="row">
+					<div class="col-sm-4">
+						<div>
+		<a href="{{iternary.url_property}}"><img src="/{{iternary.main_image}}" class="img-responsive" alt=""></a>
+						</div>
+					</div>
+					<div class="col-sm-8">
+						<div class="row">
+							<div class="col-sm-9">
+	<a href="{{iternary.url_property}}"><h3>{{iternary}}</h3></a>
+							</div>
+							<div class="col-sm-3">
+								<div class="day-night">{{iternary.duration}}</div>
+							</div>
+						</div>
+						<p>{{iternary.introduction|safe}}</p>
+
+						<div class="row tour-btn-mar">
+							<div class="col-md-4">
+								<div class="price">Price :{{iternary.price}}/-</div>
+							</div>
+							<div class="col-md-8">
+								<div class="ipad-bt-mar">
+									<a href="{{iternary.url_property}}"><button class="btn btn-primary"
+											type="submit">View Details</button></a>
+									<button class="btn btn-success" type="submit"
+										data-toggle="modal" data-target="#myModal2" name="submitbutton">Enquire
+										Now</button>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+{% endfor  %}
+
+		<!--  ul class="pagination">
+			<li><a href="#">Previous</a></li>
+			<li class="active"><a href="#">2</a></li>
+			<li><a href="#">3</a></li>
+			<li><a href="#">4</a></li>
+			<li><a href="#">Next</a></li>
+		</ul-->
+	</div>
+	{%comment%}
+		<div class="col-sm-3">
+			<div class="right-sidebar">
+				<h2>Refine Search</h2>
+				<div class="checkbox">
+					<label><input type="checkbox" value="">All Region</label>
+				</div>
+				<div class="checkbox">
+					<label><input type="checkbox" value="">North India</label>
+				</div>
+				<div class="checkbox">
+					<label><input type="checkbox" value="">OHimalayas</label>
+				</div>
+				<div class="checkbox disabled">
+					<label><input type="checkbox" value="" disabled>South
+						India </label>
+				</div>
+				<h2>Refine Search</h2>
+				<div class="form-group">
+					<select class="form-control">
+						<option>Search Destinations</option>
+						<option>2</option>
+						<option>3</option>
+						<option>4</option>
+					</select>
+				</div>
+
+				<div>
+					<img src="/static/img/customize-tour.jpg" class="img-responsive" alt="">
+				</div>
+
+			</div>
+		</div>
+	{%endcomment%}
+	</div>
+
+
+
+
+</div>
+<!-- /container -->
+
+{% endblock %}
+
