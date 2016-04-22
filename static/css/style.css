@@ -183,6 +183,18 @@ body {
   text-align:center;
   border:0
  }
+
+.overlay1 { 
+  color:#fff;
+  position:absolute;
+  z-index:1;
+  top:80%;
+  left:0;
+  width:100%;
+  text-align:left;
+  border:0
+ }
+
 .input[type=text] { width: 40%; box-sizing: border-box; color:black; height: 35px; }
 .input1[type=text] { box-sizing: border-box; color:black; height: 30px; }
 p.italic {
@@ -194,6 +206,10 @@ p.oblique {
 p.ex2 {
     font: italic bold 12px/30px Georgia, serif;
     color: #800000;
+}
+p.ex1 {
+    font: italic bold 12px/30px Georgia, serif;
+  
 }
 .handpicked ul li h4 {
     font-size: 24px;
