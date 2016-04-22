@@ -151,7 +151,7 @@ class Themes(models.Model):
 # Show same like [places ]
 class SliderImages(models.Model):
     image = models.ImageField(upload_to='static/slider/') 
-    name = models.CharField(max_length=100,null=True,blank=True,default='')
+    text = models.CharField(max_length=100,null=True,blank=True,default='')
     url_property = models.CharField(max_length=150,null=True,blank=True,default='')
 
 
