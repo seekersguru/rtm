@@ -51,6 +51,16 @@ INSTALLED_APPS = (
     'places',
 
 )
+TINYMCE_SPELLCHECKER = True
+TINYMCE_COMPRESSOR = True
+TINYMCE_DEFAULT_CONFIG = {
+    'theme': "advanced",
+    'plugins': "spellchecker",
+    'theme_advanced_buttons3_add': "|,spellchecker",
+}
+
+
+
 
 MIDDLEWARE_CLASSES = (
     'django.contrib.sessions.middleware.SessionMiddleware',
@@ -93,7 +103,7 @@ WSGI_APPLICATION = 'rtm.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': os.path.join(BASE_DIR, 'rtm1.sqlite3'),
+        'NAME': os.path.join(BASE_DIR, 'rtm.sqlite3'),
     }
 }
 
