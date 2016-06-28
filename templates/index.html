@@ -222,9 +222,8 @@
 
 {% endblock %} {%block image_gallery %}
 <div class="overlay" >
-<p style=font-size:27px; class="ex2">Search Your Dream Destination Here</p>
 <form method="get" >{% csrf_token %}
-<input type="text" name ="q" class="input" id="q" placeholder="Search" minlength=2 required>
+<input type="text" name ="q" class="input" id="q" placeholder="Search your dream destination Here" minlength=2 required>
 <button type="submit" name="search" class="btn btn-primary"><span class="glyphicon glyphicon-search" aria-hidden="true"></span> </button>
 </form>
 </div>
@@ -246,7 +245,7 @@
     <div class="item">
     {% endif %}
         <img src="{{ slider.image.url }}" alt="Image">
-           {% if slider.name %}
+           {% if slider.text %}
  <div class="overlay1">
 <p style=font-size:25px; class="ex1"><a href="{{slider.url_property}}" style="color: #FFFFFF">{{slider.text}}</a></p>
 </div>
@@ -286,7 +285,7 @@
 			<div class="col-sm-3">
 				<h5>Book by Phone</h5>
 				<div class="blue">
-					<i class="fa fa-phone"></i><a href="#">91 7676 440044</a>
+					<i class="fa fa-phone"></i><a href="#">+91 9570029090</a>
 				</div>
 			</div>
 			<div class="col-sm-3">

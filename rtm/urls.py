@@ -16,12 +16,13 @@ Including another URLconf
 from django.conf.urls import include, url
 from django.contrib import admin
 from tinymce import urls as tiny_urls
-from places.views import index,review_and_verified,customer_support \
+from places.views import sitemap,index,review_and_verified,customer_support \
     ,listing_tour,vip_access,low_price_guaranteed,iternary_detail,theme_tour,nearest_buses
 urlpatterns = [
     url(r'^admin/', include(admin.site.urls)),
     url(r'^tinymce/', include(tiny_urls)),
     url(r'^$', index, name='index_method'),
+    url(r'^sitemap.xml/$', sitemap, name='sitemap'),
     url(r'^reviewed-and-verified/$', review_and_verified, name='reviewed-and-verified'),
     url(r'^customer-support/$', customer_support, name='customer-support'),
     

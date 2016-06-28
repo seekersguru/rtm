@@ -487,7 +487,7 @@ def theme_tour(request,theme_id=None):
     context["head"]="Top Themes"
     place=Themes.objects.get(url_property=request.get_full_path())
     
-    context["it"]=it
+    #context["it"]=it
     context["place"]=place
     context["iternaries"]=[e for e in place.iternaries.iterator()]
     return TemplateResponse(request, 'listing_tour.html', context)
@@ -678,6 +678,13 @@ def low_price_guaranteed(request):
             messages.success(request, 'Message sent successfully you will recieve a phone call shortly.')
           
     return TemplateResponse(request, 'low_price_guaranteed.html', {"nav":"low_price_guaranteed"})
+
+
+def sitemap(request):
+    return TemplateResponse(request,'sitemap.xml', content_type='text/xml')
+
+
+
 
 
 
