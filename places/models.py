@@ -3,7 +3,8 @@ from django.db import models
 # Create your models here.
 from datetime import date
 from django.db import models
-
+from django.db.models.signals import pre_delete
+from django.dispatch.dispatcher import receiver
 from tinymce.models import HTMLField
 from django.core.exceptions import ObjectDoesNotExist
 from django import forms
@@ -153,8 +154,8 @@ class SliderImages(models.Model):
     image = models.ImageField(upload_to='static/slider/') 
     text = models.CharField(max_length=100,null=True,blank=True,default='')
     url_property = models.CharField(max_length=150,null=True,blank=True,default='')
-
-
+    def __str__(self):
+        return self.image.name
 
   
 class ReviewVerified(models.Model):
@@ -209,3 +210,12 @@ class PlanMyTrip(models.Model):
 
       
 
+class Sitemap(models.Model):
+    docfile = models.FileField(upload_to='templates/')
+    def __str__(self):
+        return self.docfile.name
+
+@receiver(pre_delete, sender=Sitemap)
+def sitemap_delete(sender, instance, **kwargs):
+    # Pass false so FileField doesn't save the model.
+    instance.docfile.delete(False)

@@ -11,7 +11,7 @@
 			<div class="pakage-box" style="height: 560px;" >
 				<h3><a href="{{place.url_property}}">{{place.name}}</a></h3>
 				<div>
-<a href="{{place.url_property}}"><img src="{{place.main_image}}" class="img-responsive" alt=""></a>
+<a href="{{place.url_property}}"><img src="{{place.main_image}}" class="img-responsive" width="100%" style="border:1px solid black;" alt=""></a>
 				</div>
 				<p>
 				<span style="color: #a9a9a9; font-family: 'Open Sans', sans-serif; font-size: 14px; line-height: 24px;">
@@ -34,7 +34,7 @@
 			<div class="pakage-box" style="height: 556px;">
 				<h3><a href="{{place.url_property}}">{{place.name}}</a></h3>
 				<div>
-<a href="{{place.url_property}}"><img src="{{place.main_image}}" class="img-responsive" alt=""></a>
+<a href="{{place.url_property}}"><img src="{{place.main_image}}" class="img-responsive" width="100%" style="border:1px solid black;" alt=""></a>
 				</div>
 				<p>
 				<span style="color: #a9a9a9; font-family: 'Open Sans', sans-serif; font-size: 14px; line-height: 24px;">
@@ -96,7 +96,7 @@
 								<div>
 
 									
-                                                <a href="{{bestsellings.best.url_property}}"> <img src="/{{bestsellings.best.main_image}}" class="img-responsive" alt=""></a>
+                                                <a href="{{bestsellings.best.url_property}}"> <img src="/{{bestsellings.best.main_image}}" class="img-responsive" style="border:1px solid black;" alt=""></a>
 								</div>
 		<a href="{{bestsellings.best.url_property}}"><h4>{{bestsellings.best.name}}</h4></a>
                                                                                                                                     							
@@ -123,7 +123,7 @@
 								<div>
 
 									
-                                            <a href="{{bestsellings.best.url_property}}"><img src="/{{bestsellings.best.main_image}}" class="img-responsive" alt=""></a>
+                                            <a href="{{bestsellings.best.url_property}}"><img src="/{{bestsellings.best.main_image}}" class="img-responsive" style="border:1px solid black;" alt=""></a>
 								</div>
 		<a href="{{bestsellings.best.url_property}}"><h4>{{bestsellings.best.name}}</h4></a>
                                                                                                                                     							
@@ -247,7 +247,7 @@
         <img src="{{ slider.image.url }}" alt="Image">
            {% if slider.text %}
  <div class="overlay1">
-<p style=font-size:25px; class="ex1"><a href="{{slider.url_property}}" style="color: #FFFFFF">{{slider.text}}</a></p>
+<p style=font-size:25px; class="ex1"><a href="{{slider.url_property}}" style="color: #FFFFFF"><blink>{{slider.text}}><blink></a></p>
 </div>
     {% endif %}
     </div>

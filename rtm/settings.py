@@ -1,3 +1,5 @@
+
+
 """
 Django settings for rtm project.
 
@@ -24,6 +26,7 @@ SECRET_KEY = '4z-f1%h9&i-^bor$n2)92z=il%&zq=dvzx2l!4-a9*x%w6kcl$'
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
+#DEBUG404 = True
 
 ALLOWED_HOSTS = ['royaltripmakers.com','www.royaltripmakers.com']
 

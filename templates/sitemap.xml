@@ -1,877 +1,308 @@
 <?xml version="1.0" encoding="UTF-8"?>
-
-<urlset
-
-      xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
-
-      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-
-      xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
-
-            http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
-
-<!-- created with Free Online Sitemap Generator www.xml-sitemaps.com -->
-
-
-
-<url>
-
-  <loc>http://royaltripmakers.com/</loc>
-
-  <lastmod>2016-06-22T05:13:19+00:00</lastmod>
-
-  <priority>1.00</priority>
-
-</url>
-
-<url>
-
-  <loc>http://royaltripmakers.com/listing-tour/</loc>
-
-  <lastmod>2016-06-22T05:13:19+00:00</lastmod>
-
-  <priority>0.80</priority>
-
-</url>
-
-<url>
-
-  <loc>http://royaltripmakers.com/reviewed-and-verified/</loc>
-
-  <lastmod>2016-06-22T05:13:19+00:00</lastmod>
-
-  <priority>0.80</priority>
-
-</url>
-
-<url>
-
-  <loc>http://royaltripmakers.com/vip-access/</loc>
-
-  <lastmod>2016-06-22T05:13:19+00:00</lastmod>
-
-  <priority>0.80</priority>
-
-</url>
-
-<url>
-
-  <loc>http://royaltripmakers.com/low-price-guaranteed/</loc>
-
-  <lastmod>2016-06-22T05:13:19+00:00</lastmod>
-
-  <priority>0.80</priority>
-
-</url>
-
-<url>
-
-  <loc>http://royaltripmakers.com/customer-support/</loc>
-
-  <lastmod>2016-06-22T05:13:19+00:00</lastmod>
-
-  <priority>0.80</priority>
-
-</url>
-
-<url>
-
-  <loc>http://royaltripmakers.com/tour/amarnath-yatra/</loc>
-
-  <lastmod>2016-06-22T05:13:19+00:00</lastmod>
-
-  <priority>0.80</priority>
-
-</url>
-
-<url>
-
-  <loc>http://royaltripmakers.com/tour/andaman-island/</loc>
-
-  <lastmod>2016-06-22T05:13:19+00:00</lastmod>
-
-  <priority>0.80</priority>
-
-</url>
-
-<url>
-
-  <loc>http://royaltripmakers.com/tour/singapore-and-malaysia-/</loc>
-
-  <lastmod>2016-06-22T05:13:19+00:00</lastmod>
-
-  <priority>0.80</priority>
-
-</url>
-
-<url>
-
-  <loc>http://royaltripmakers.com/tour/beach-holidays/</loc>
-
-  <lastmod>2016-06-22T05:13:19+00:00</lastmod>
-
-  <priority>0.80</priority>
-
-</url>
-
-<url>
-
-  <loc>http://royaltripmakers.com/tour/chardham-yatra-/</loc>
-
-  <lastmod>2016-06-22T05:13:19+00:00</lastmod>
-
-  <priority>0.80</priority>
-
-</url>
-
-<url>
-
-  <loc>http://royaltripmakers.com/tour/europe-tour/</loc>
-
-  <lastmod>2016-06-22T05:13:19+00:00</lastmod>
-
-  <priority>0.80</priority>
-
-</url>
-
-<url>
-
-  <loc>http://royaltripmakers.com/tour/thailand-package/</loc>
-
-  <lastmod>2016-06-22T05:13:19+00:00</lastmod>
-
-  <priority>0.80</priority>
-
-</url>
-
-<url>
-
-  <loc>http://royaltripmakers.com/tour/sri-lanka/</loc>
-
-  <lastmod>2016-06-22T05:13:19+00:00</lastmod>
-
-  <priority>0.80</priority>
-
-</url>
-
-<url>
-
-  <loc>http://royaltripmakers.com/tour/kerela-tourism/</loc>
-
-  <lastmod>2016-06-22T05:13:19+00:00</lastmod>
-
-  <priority>0.80</priority>
-
-</url>
-
-<url>
-
-  <loc>http://royaltripmakers.com/tour/nepal-trip/</loc>
-
-  <lastmod>2016-06-22T05:13:19+00:00</lastmod>
-
-  <priority>0.80</priority>
-
-</url>
-
-<url>
-
-  <loc>http://royaltripmakers.com/tour/jammu-and-kashmir/</loc>
-
-  <lastmod>2016-06-22T05:13:19+00:00</lastmod>
-
-  <priority>0.80</priority>
-
-</url>
-
-<url>
-
-  <loc>http://royaltripmakers.com/tour/haridwar-tour/</loc>
-
-  <lastmod>2016-06-22T05:13:19+00:00</lastmod>
-
-  <priority>0.80</priority>
-
-</url>
-
-<url>
-
-  <loc>http://royaltripmakers.com/tour/goa-package/</loc>
-
-  <lastmod>2016-06-22T05:13:19+00:00</lastmod>
-
-  <priority>0.80</priority>
-
-</url>
-
-<url>
-
-  <loc>http://royaltripmakers.com/tour/indian-pilgrimage/</loc>
-
-  <lastmod>2016-06-22T05:13:19+00:00</lastmod>
-
-  <priority>0.80</priority>
-
-</url>
-
-<url>
-
-  <loc>http://royaltripmakers.com/tour/himachal-pradesh/</loc>
-
-  <lastmod>2016-06-22T05:13:19+00:00</lastmod>
-
-  <priority>0.80</priority>
-
-</url>
-
-<url>
-
-  <loc>http://royaltripmakers.com/tour/north-east-india/</loc>
-
-  <lastmod>2016-06-22T05:13:19+00:00</lastmod>
-
-  <priority>0.80</priority>
-
-</url>
-
-<url>
-
-  <loc>http://royaltripmakers.com/tour/gujrat-tourism/</loc>
-
-  <lastmod>2016-06-22T05:13:19+00:00</lastmod>
-
-  <priority>0.80</priority>
-
-</url>
-
-<url>
-
-  <loc>http://royaltripmakers.com/theme/pilgrimage-trip/</loc>
-
-  <lastmod>2016-06-22T05:13:19+00:00</lastmod>
-
-  <priority>0.80</priority>
-
-</url>
-
-<url>
-
-  <loc>http://royaltripmakers.com/theme/international-trip/</loc>
-
-  <lastmod>2016-06-22T05:13:19+00:00</lastmod>
-
-  <priority>0.80</priority>
-
-</url>
-
-<url>
-
-  <loc>http://royaltripmakers.com/theme/honeymoon-trip/</loc>
-
-  <lastmod>2016-06-22T05:13:19+00:00</lastmod>
-
-  <priority>0.80</priority>
-
-</url>
-
-<url>
-
-  <loc>http://royaltripmakers.com/theme/hill-stations-tour/</loc>
-
-  <lastmod>2016-06-22T05:13:19+00:00</lastmod>
-
-  <priority>0.80</priority>
-
-</url>
-
-<url>
-
-  <loc>http://royaltripmakers.com/theme/beach-holidays/</loc>
-
-  <lastmod>2016-06-22T05:13:19+00:00</lastmod>
-
-  <priority>0.80</priority>
-
-</url>
-
-<url>
-
-  <loc>http://royaltripmakers.com/theme/adventure-trips/</loc>
-
-  <lastmod>2016-06-22T05:13:19+00:00</lastmod>
-
-  <priority>0.80</priority>
-
-</url>
-
-<url>
-
-  <loc>http://royaltripmakers.com/package/andaman-classic-tour/</loc>
-
-  <lastmod>2016-06-22T05:13:19+00:00</lastmod>
-
-  <priority>0.80</priority>
-
-</url>
-
-<url>
-
-  <loc>http://royaltripmakers.com/package/chardham-yatra---ex---delhi---10-n/</loc>
-
-  <lastmod>2016-06-22T05:13:19+00:00</lastmod>
-
-  <priority>0.80</priority>
-
-</url>
-
-<url>
-
-  <loc>http://royaltripmakers.com/package/himachal-darshan/</loc>
-
-  <lastmod>2016-06-22T05:13:19+00:00</lastmod>
-
-  <priority>0.80</priority>
-
-</url>
-
-<url>
-
-  <loc>http://royaltripmakers.com/package/gujrat-jyotirling-darshan/</loc>
-
-  <lastmod>2016-06-22T05:13:19+00:00</lastmod>
-
-  <priority>0.80</priority>
-
-</url>
-
-<url>
-
-  <loc>http://royaltripmakers.com/package/gangtok-tour/</loc>
-
-  <lastmod>2016-06-22T05:13:19+00:00</lastmod>
-
-  <priority>0.80</priority>
-
-</url>
-
-<url>
-
-  <loc>http://royaltripmakers.com/package/gulmarg-tour-ex---srinagar/</loc>
-
-  <lastmod>2016-06-22T05:13:19+00:00</lastmod>
-
-  <priority>0.64</priority>
-
-</url>
-
-<url>
-
-  <loc>http://royaltripmakers.com/package/glorious-kashmir/</loc>
-
-  <lastmod>2016-06-22T05:13:19+00:00</lastmod>
-
-  <priority>0.64</priority>
-
-</url>
-
-<url>
-
-  <loc>http://royaltripmakers.com/package/chardham-yatra---09-n/</loc>
-
-  <lastmod>2016-06-22T05:13:19+00:00</lastmod>
-
-  <priority>0.64</priority>
-
-</url>
-
-<url>
-
-  <loc>http://royaltripmakers.com/package/chardham-package-ex---manali----13-n/</loc>
-
-  <lastmod>2016-06-22T05:13:19+00:00</lastmod>
-
-  <priority>0.64</priority>
-
-</url>
-
-<url>
-
-  <loc>http://royaltripmakers.com/package/chardham-yatra-ex---haridwar---11-n/</loc>
-
-  <lastmod>2016-06-22T05:13:19+00:00</lastmod>
-
-  <priority>0.64</priority>
-
-</url>
-
-<url>
-
-  <loc>http://royaltripmakers.com/package/chardham-package---ex---manali---14-n/</loc>
-
-  <lastmod>2016-06-22T05:13:19+00:00</lastmod>
-
-  <priority>0.64</priority>
-
-</url>
-
-<url>
-
-  <loc>http://royaltripmakers.com/package/chardham-yatra-ex---haridwar---09-n/</loc>
-
-  <lastmod>2016-06-22T05:13:19+00:00</lastmod>
-
-  <priority>0.64</priority>
-
-</url>
-
-<url>
-
-  <loc>http://royaltripmakers.com/package/do-dham-yatra-with-haridwar/</loc>
-
-  <lastmod>2016-06-22T05:13:19+00:00</lastmod>
-
-  <priority>0.64</priority>
-
-</url>
-
-<url>
-
-  <loc>http://royaltripmakers.com/package/europe-discover----08-n/</loc>
-
-  <lastmod>2016-06-22T05:13:19+00:00</lastmod>
-
-  <priority>0.64</priority>
-
-</url>
-
-<url>
-
-  <loc>http://royaltripmakers.com/package/europe-exploring---04-n-/</loc>
-
-  <lastmod>2016-06-22T05:13:19+00:00</lastmod>
-
-  <priority>0.64</priority>
-
-</url>
-
-<url>
-
-  <loc>http://royaltripmakers.com/package/europe-majestic---14-n/</loc>
-
-  <lastmod>2016-06-22T05:13:19+00:00</lastmod>
-
-  <priority>0.64</priority>
-
-</url>
-
-<url>
-
-  <loc>http://royaltripmakers.com/package/europe-beautiful---18-n/</loc>
-
-  <lastmod>2016-06-22T05:13:19+00:00</lastmod>
-
-  <priority>0.64</priority>
-
-</url>
-
-<url>
-
-  <loc>http://royaltripmakers.com/package/camping-tour-/</loc>
-
-  <lastmod>2016-06-22T05:13:19+00:00</lastmod>
-
-  <priority>0.64</priority>
-
-</url>
-
-<url>
-
-  <loc>http://royaltripmakers.com/package/scintillating-singapore-with-classy-cruise-/</loc>
-
-  <lastmod>2016-06-22T05:13:19+00:00</lastmod>
-
-  <priority>0.64</priority>
-
-</url>
-
-<url>
-
-  <loc>http://royaltripmakers.com/package/beautiful-singapore-/</loc>
-
-  <lastmod>2016-06-22T05:13:19+00:00</lastmod>
-
-  <priority>0.64</priority>
-
-</url>
-
-<url>
-
-  <loc>http://royaltripmakers.com/package/singapore-trip-with-krabi-and-cruise/</loc>
-
-  <lastmod>2016-06-22T05:13:19+00:00</lastmod>
-
-  <priority>0.64</priority>
-
-</url>
-
-<url>
-
-  <loc>http://royaltripmakers.com/package/malaysia-5-nights/</loc>
-
-  <lastmod>2016-06-22T05:13:19+00:00</lastmod>
-
-  <priority>0.64</priority>
-
-</url>
-
-<url>
-
-  <loc>http://royaltripmakers.com/package/splendid-singapore/</loc>
-
-  <lastmod>2016-06-22T05:13:19+00:00</lastmod>
-
-  <priority>0.64</priority>
-
-</url>
-
-<url>
-
-  <loc>http://royaltripmakers.com/package/goa-honeymoon/</loc>
-
-  <lastmod>2016-06-22T05:13:19+00:00</lastmod>
-
-  <priority>0.64</priority>
-
-</url>
-
-<url>
-
-  <loc>http://royaltripmakers.com/package/tarkarli-tour/</loc>
-
-  <lastmod>2016-06-22T05:13:19+00:00</lastmod>
-
-  <priority>0.64</priority>
-
-</url>
-
-<url>
-
-  <loc>http://royaltripmakers.com/package/maldives-trip/</loc>
-
-  <lastmod>2016-06-22T05:13:19+00:00</lastmod>
-
-  <priority>0.64</priority>
-
-</url>
-
-<url>
-
-  <loc>http://royaltripmakers.com/package/goa-package-ex---mumbai/</loc>
-
-  <lastmod>2016-06-22T05:13:19+00:00</lastmod>
-
-  <priority>0.64</priority>
-
-</url>
-
-<url>
-
-  <loc>http://royaltripmakers.com/package/panchbhoota-linga---south-india/</loc>
-
-  <lastmod>2016-06-22T05:13:19+00:00</lastmod>
-
-  <priority>0.64</priority>
-
-</url>
-
-<url>
-
-  <loc>http://royaltripmakers.com/package/gaya---buddha-darshan/</loc>
-
-  <lastmod>2016-06-22T05:13:19+00:00</lastmod>
-
-  <priority>0.64</priority>
-
-</url>
-
-<url>
-
-  <loc>http://royaltripmakers.com/package/mahabaleshwar-trip/</loc>
-
-  <lastmod>2016-06-22T05:13:19+00:00</lastmod>
-
-  <priority>0.64</priority>
-
-</url>
-
-<url>
-
-  <loc>http://royaltripmakers.com/package/manali-tour-ex---delhi/</loc>
-
-  <lastmod>2016-06-22T05:13:19+00:00</lastmod>
-
-  <priority>0.64</priority>
-
-</url>
-
-<url>
-
-  <loc>http://royaltripmakers.com/package/shimla-manali-ex--delhi/</loc>
-
-  <lastmod>2016-06-22T05:13:19+00:00</lastmod>
-
-  <priority>0.64</priority>
-
-</url>
-
-<url>
-
-  <loc>http://royaltripmakers.com/package/chail-camping/</loc>
-
-  <lastmod>2016-06-22T05:13:19+00:00</lastmod>
-
-  <priority>0.64</priority>
-
-</url>
-
-<url>
-
-  <loc>http://royaltripmakers.com/package/summer-hill-tour-ex---delhi/</loc>
-
-  <lastmod>2016-06-22T05:13:19+00:00</lastmod>
-
-  <priority>0.64</priority>
-
-</url>
-
-<url>
-
-  <loc>http://royaltripmakers.com/package/himachal-temple-tour/</loc>
-
-  <lastmod>2016-06-22T05:13:19+00:00</lastmod>
-
-  <priority>0.64</priority>
-
-</url>
-
-<url>
-
-  <loc>http://royaltripmakers.com/package/darjeeling-tour/</loc>
-
-  <lastmod>2016-06-22T05:13:19+00:00</lastmod>
-
-  <priority>0.64</priority>
-
-</url>
-
-<url>
-
-  <loc>http://royaltripmakers.com/package/sikkim-special/</loc>
-
-  <lastmod>2016-06-22T05:13:19+00:00</lastmod>
-
-  <priority>0.64</priority>
-
-</url>
-
-<url>
-
-  <loc>http://royaltripmakers.com/package/amarnath-yatra---ex-sonmarg/</loc>
-
-  <lastmod>2016-06-22T05:13:19+00:00</lastmod>
-
-  <priority>0.64</priority>
-
-</url>
-
-<url>
-
-  <loc>http://royaltripmakers.com/package/amarnath-yatra-ex-srinagar/</loc>
-
-  <lastmod>2016-06-22T05:13:19+00:00</lastmod>
-
-  <priority>0.64</priority>
-
-</url>
-
-<url>
-
-  <loc>http://royaltripmakers.com/package/amarnath-devotional-yatra-/</loc>
-
-  <lastmod>2016-06-22T05:13:19+00:00</lastmod>
-
-  <priority>0.64</priority>
-
-</url>
-
-<url>
-
-  <loc>http://royaltripmakers.com/package/amarnath-shivling-tour/</loc>
-
-  <lastmod>2016-06-22T05:13:19+00:00</lastmod>
-
-  <priority>0.64</priority>
-
-</url>
-
-<url>
-
-  <loc>http://royaltripmakers.com/package/pattaya-tours/</loc>
-
-  <lastmod>2016-06-22T05:13:19+00:00</lastmod>
-
-  <priority>0.64</priority>
-
-</url>
-
-<url>
-
-  <loc>http://royaltripmakers.com/package/bangkok---pattaya/</loc>
-
-  <lastmod>2016-06-22T05:13:19+00:00</lastmod>
-
-  <priority>0.64</priority>
-
-</url>
-
-<url>
-
-  <loc>http://royaltripmakers.com/package/gujrat-jyotirling-tour/</loc>
-
-  <lastmod>2016-06-22T05:13:19+00:00</lastmod>
-
-  <priority>0.64</priority>
-
-</url>
-
-<url>
-
-  <loc>http://royaltripmakers.com/package/somnath-darshan-with-dwarka/</loc>
-
-  <lastmod>2016-06-22T05:13:19+00:00</lastmod>
-
-  <priority>0.64</priority>
-
-</url>
-
-<url>
-
-  <loc>http://royaltripmakers.com/package/gujrat-tour/</loc>
-
-  <lastmod>2016-06-22T05:13:19+00:00</lastmod>
-
-  <priority>0.64</priority>
-
-</url>
-
-<url>
-
-  <loc>http://royaltripmakers.com/package/kerela-adventure-trip/</loc>
-
-  <lastmod>2016-06-22T05:13:19+00:00</lastmod>
-
-  <priority>0.64</priority>
-
-</url>
-
-<url>
-
-  <loc>http://royaltripmakers.com/package/munnar-athirapally-honeymoon-package/</loc>
-
-  <lastmod>2016-06-22T05:13:19+00:00</lastmod>
-
-  <priority>0.64</priority>
-
-</url>
-
-<url>
-
-  <loc>http://royaltripmakers.com/package/exotic-place-in-munnar/</loc>
-
-  <lastmod>2016-06-22T05:13:19+00:00</lastmod>
-
-  <priority>0.64</priority>
-
-</url>
-
-<url>
-
-  <loc>http://royaltripmakers.com/package/sri-lanka-classic-tour/</loc>
-
-  <lastmod>2016-06-22T05:13:19+00:00</lastmod>
-
-  <priority>0.64</priority>
-
-</url>
-
-<url>
-
-  <loc>http://royaltripmakers.com/package/ramayana-package-/</loc>
-
-  <lastmod>2016-06-22T05:13:19+00:00</lastmod>
-
-  <priority>0.64</priority>
-
-</url>
-
-<url>
-
-  <loc>http://royaltripmakers.com/package/sri-lanka-family-tour/</loc>
-
-  <lastmod>2016-06-22T05:13:19+00:00</lastmod>
-
-  <priority>0.64</priority>
-
-</url>
-
-<url>
-
-  <loc>http://royaltripmakers.com/package/kathmandu-valley-tour/</loc>
-
-  <lastmod>2016-06-22T05:13:19+00:00</lastmod>
-
-  <priority>0.64</priority>
-
-</url>
-
-<url>
-
-  <loc>http://royaltripmakers.com/package/kathmandu-and-patan-city-tour/</loc>
-
-  <lastmod>2016-06-22T05:13:19+00:00</lastmod>
-
-  <priority>0.64</priority>
-
-</url>
-
-<url>
-
-  <loc>http://royaltripmakers.com/package/chitwan-wildlife-tour/</loc>
-
-  <lastmod>2016-06-22T05:13:19+00:00</lastmod>
-
-  <priority>0.64</priority>
-
-</url>
-
-<url>
-
-  <loc>http://royaltripmakers.com/package/pokhara-trekking-sites/</loc>
-
-  <lastmod>2016-06-22T05:13:19+00:00</lastmod>
-
-  <priority>0.64</priority>
-
-</url>
-
-<url>
-
-  <loc>http://royaltripmakers.com/package/mountain-trekking-trip/</loc>
-
-  <lastmod>2016-06-22T05:13:19+00:00</lastmod>
-
-  <priority>0.64</priority>
-
-</url>
-
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+<url><loc>http://www.royaltripmakers.com/</loc><changefreq>weekly</changefreq><priority>1.00</priority></url>
+<url><loc>http://www.royaltripmakers.com/listing-tour/</loc><changefreq>weekly</changefreq><priority>0.85</priority></url>
+<url><loc>http://www.royaltripmakers.com/reviewed-and-verified/</loc><changefreq>weekly</changefreq><priority>0.85</priority></url>
+<url><loc>http://www.royaltripmakers.com/vip-access/</loc><changefreq>weekly</changefreq><priority>0.85</priority></url>
+<url><loc>http://www.royaltripmakers.com/low-price-guaranteed/</loc><changefreq>weekly</changefreq><priority>0.85</priority></url>
+<url><loc>http://www.royaltripmakers.com/customer-support/</loc><changefreq>weekly</changefreq><priority>0.85</priority></url>
+<url><loc>http://royaltripmakers.com/tour/amarnath-yatra/</loc><changefreq>weekly</changefreq><priority>0.85</priority></url>
+<url><loc>http://royaltripmakers.com/tour/andaman-island/</loc><changefreq>weekly</changefreq><priority>0.85</priority></url>
+<url><loc>http://royaltripmakers.com/tour/singapore-and-malaysia-/</loc><changefreq>weekly</changefreq><priority>0.85</priority></url>
+<url><loc>http://royaltripmakers.com/tour/beach-holidays/</loc><changefreq>weekly</changefreq><priority>0.85</priority></url>
+<url><loc>http://royaltripmakers.com/tour/chardham-yatra-/</loc><changefreq>weekly</changefreq><priority>0.85</priority></url>
+<url><loc>http://royaltripmakers.com/tour/thailand-package/</loc><changefreq>weekly</changefreq><priority>0.85</priority></url>
+<url><loc>http://royaltripmakers.com/tour/nepal-trip/</loc><changefreq>weekly</changefreq><priority>0.85</priority></url>
+<url><loc>http://www.royaltripmakers.com/tour/jammu-and-kashmir/</loc><changefreq>weekly</changefreq><priority>0.85</priority></url>
+<url><loc>http://www.royaltripmakers.com/tour/andaman-island/</loc><changefreq>weekly</changefreq><priority>0.85</priority></url>
+<url><loc>http://www.royaltripmakers.com/tour/chardham-yatra-/</loc><changefreq>weekly</changefreq><priority>0.85</priority></url>
+<url><loc>http://www.royaltripmakers.com/tour/europe-trip/</loc><changefreq>weekly</changefreq><priority>0.85</priority></url>
+<url><loc>http://www.royaltripmakers.com/tour/uttrakhand-trip/</loc><changefreq>weekly</changefreq><priority>0.85</priority></url>
+<url><loc>http://www.royaltripmakers.com/tour/singapore-and-malaysia-/</loc><changefreq>weekly</changefreq><priority>0.85</priority></url>
+<url><loc>http://www.royaltripmakers.com/tour/beach-holidays/</loc><changefreq>weekly</changefreq><priority>0.85</priority></url>
+<url><loc>http://www.royaltripmakers.com/tour/goa-package/</loc><changefreq>weekly</changefreq><priority>0.85</priority></url>
+<url><loc>http://www.royaltripmakers.com/tour/indian-pilgrimage/</loc><changefreq>weekly</changefreq><priority>0.85</priority></url>
+<url><loc>http://www.royaltripmakers.com/tour/himachal-pradesh/</loc><changefreq>weekly</changefreq><priority>0.85</priority></url>
+<url><loc>http://www.royaltripmakers.com/tour/north-east-india/</loc><changefreq>weekly</changefreq><priority>0.85</priority></url>
+<url><loc>http://www.royaltripmakers.com/tour/amarnath-yatra/</loc><changefreq>weekly</changefreq><priority>0.85</priority></url>
+<url><loc>http://www.royaltripmakers.com/tour/thailand-package/</loc><changefreq>weekly</changefreq><priority>0.85</priority></url>
+<url><loc>http://www.royaltripmakers.com/tour/gujrat-darshan/</loc><changefreq>weekly</changefreq><priority>0.85</priority></url>
+<url><loc>http://www.royaltripmakers.com/tour/kerela-holidays/</loc><changefreq>weekly</changefreq><priority>0.85</priority></url>
+<url><loc>http://www.royaltripmakers.com/tour/sri-lanka-special/</loc><changefreq>weekly</changefreq><priority>0.85</priority></url>
+<url><loc>http://www.royaltripmakers.com/tour/nepal-trip/</loc><changefreq>weekly</changefreq><priority>0.85</priority></url>
+<url><loc>http://www.royaltripmakers.com/tour/royal-rajasthan-/</loc><changefreq>weekly</changefreq><priority>0.85</priority></url>
+<url><loc>http://www.royaltripmakers.com/tour/dubai-travel/</loc><changefreq>weekly</changefreq><priority>0.85</priority></url>
+<url><loc>http://www.royaltripmakers.com/tour/maharashtra/</loc><changefreq>weekly</changefreq><priority>0.85</priority></url>
+<url><loc>http://www.royaltripmakers.com/tour/bhutan-camping/</loc><changefreq>weekly</changefreq><priority>0.85</priority></url>
+<url><loc>http://www.royaltripmakers.com/tour/industrial-visit/</loc><changefreq>weekly</changefreq><priority>0.85</priority></url>
+<url><loc>http://www.royaltripmakers.com/theme/pilgrimage-trip/</loc><changefreq>weekly</changefreq><priority>0.85</priority></url>
+<url><loc>http://www.royaltripmakers.com/theme/international-trip/</loc><changefreq>weekly</changefreq><priority>0.85</priority></url>
+<url><loc>http://www.royaltripmakers.com/theme/honeymoon-trip/</loc><changefreq>weekly</changefreq><priority>0.85</priority></url>
+<url><loc>http://www.royaltripmakers.com/theme/hill-stations-tour/</loc><changefreq>weekly</changefreq><priority>0.85</priority></url>
+<url><loc>http://www.royaltripmakers.com/theme/beach-holidays/</loc><changefreq>weekly</changefreq><priority>0.85</priority></url>
+<url><loc>http://www.royaltripmakers.com/theme/adventure-and-wildlife/</loc><changefreq>weekly</changefreq><priority>0.85</priority></url>
+<url><loc>http://www.royaltripmakers.com/theme/cruise-special/</loc><changefreq>weekly</changefreq><priority>0.85</priority></url>
+<url><loc>http://www.royaltripmakers.com/package/andaman-classic-tour/</loc><changefreq>weekly</changefreq><priority>0.85</priority></url>
+<url><loc>http://www.royaltripmakers.com/package/chardham-yatra-ex-delhi-10-n/</loc><changefreq>weekly</changefreq><priority>0.85</priority></url>
+<url><loc>http://www.royaltripmakers.com/package/royal-rajasthan-with-delhi-and-agra/</loc><changefreq>weekly</changefreq><priority>0.85</priority></url>
+<url><loc>http://www.royaltripmakers.com/package/goa-honeymoon/</loc><changefreq>weekly</changefreq><priority>0.85</priority></url>
+<url><loc>http://www.royaltripmakers.com/package/himachal-darshan/</loc><changefreq>weekly</changefreq><priority>0.85</priority></url>
+<url><loc>http://www.royaltripmakers.com/package/gujrat-jyotirling-darshan/</loc><changefreq>weekly</changefreq><priority>0.85</priority></url>
+<url><loc>http://www.royaltripmakers.com/package/gangtok-tour/</loc><changefreq>weekly</changefreq><priority>0.85</priority></url>
+<url><loc>http://www.royaltripmakers.com/package/bangkok-pattaya-special/</loc><changefreq>weekly</changefreq><priority>0.85</priority></url>
+<url><loc>http://www.royaltripmakers.com/package/gulmarg-tour-ex-srinagar/</loc><changefreq>weekly</changefreq><priority>0.69</priority></url>
+<url><loc>http://www.royaltripmakers.com/package/glorious-kashmir/</loc><changefreq>weekly</changefreq><priority>0.69</priority></url>
+<url><loc>http://www.royaltripmakers.com/package/vaishno-devi-trip/</loc><changefreq>weekly</changefreq><priority>0.69</priority></url>
+<url><loc>http://www.royaltripmakers.com/package/scenic-kashmir/</loc><changefreq>weekly</changefreq><priority>0.69</priority></url>
+<url><loc>http://www.royaltripmakers.com/package/mata-vaishno-devi-yatra/</loc><changefreq>weekly</changefreq><priority>0.69</priority></url>
+<url><loc>http://www.royaltripmakers.com/package/andaman-weekend/</loc><changefreq>weekly</changefreq><priority>0.69</priority></url>
+<url><loc>http://www.royaltripmakers.com/package/glimpse-of-andaman/</loc><changefreq>weekly</changefreq><priority>0.69</priority></url>
+<url><loc>http://www.royaltripmakers.com/package/magical-andaman/</loc><changefreq>weekly</changefreq><priority>0.69</priority></url>
+<url><loc>http://www.royaltripmakers.com/package/chardham-yatra-09-n/</loc><changefreq>weekly</changefreq><priority>0.69</priority></url>
+<url><loc>http://www.royaltripmakers.com/package/chardham-package-ex-manali-13-n/</loc><changefreq>weekly</changefreq><priority>0.69</priority></url>
+<url><loc>http://www.royaltripmakers.com/package/chardham-yatra-ex-haridwar-11-n/</loc><changefreq>weekly</changefreq><priority>0.69</priority></url>
+<url><loc>http://www.royaltripmakers.com/package/chardham-package-ex-manali-14-n/</loc><changefreq>weekly</changefreq><priority>0.69</priority></url>
+<url><loc>http://www.royaltripmakers.com/package/chardham-yatra-ex-haridwar-09-n/</loc><changefreq>weekly</changefreq><priority>0.69</priority></url>
+<url><loc>http://www.royaltripmakers.com/package/do-dham-yatra-with-haridwar/</loc><changefreq>weekly</changefreq><priority>0.69</priority></url>
+<url><loc>http://www.royaltripmakers.com/package/discover-europe-/</loc><changefreq>weekly</changefreq><priority>0.69</priority></url>
+<url><loc>http://www.royaltripmakers.com/package/exploring-europe/</loc><changefreq>weekly</changefreq><priority>0.69</priority></url>
+<url><loc>http://www.royaltripmakers.com/package/majestic-europe/</loc><changefreq>weekly</changefreq><priority>0.69</priority></url>
+<url><loc>http://www.royaltripmakers.com/package/beautiful-europe-/</loc><changefreq>weekly</changefreq><priority>0.69</priority></url>
+<url><loc>http://www.royaltripmakers.com/package/camping-tour-/</loc><changefreq>weekly</changefreq><priority>0.69</priority></url>
+<url><loc>http://www.royaltripmakers.com/package/corbett-safari-tour/</loc><changefreq>weekly</changefreq><priority>0.69</priority></url>
+<url><loc>http://www.royaltripmakers.com/package/nainital-kausani-trip/</loc><changefreq>weekly</changefreq><priority>0.69</priority></url>
+<url><loc>http://www.royaltripmakers.com/package/splendour-kumao-trip/</loc><changefreq>weekly</changefreq><priority>0.69</priority></url>
+<url><loc>http://www.royaltripmakers.com/package/kausani-trip/</loc><changefreq>weekly</changefreq><priority>0.69</priority></url>
+<url><loc>http://www.royaltripmakers.com/package/scintillating-singapore-with-cruise-/</loc><changefreq>weekly</changefreq><priority>0.69</priority></url>
+<url><loc>http://www.royaltripmakers.com/package/beautiful-singapore-/</loc><changefreq>weekly</changefreq><priority>0.69</priority></url>
+<url><loc>http://www.royaltripmakers.com/package/singapore-cruise-trip-/</loc><changefreq>weekly</changefreq><priority>0.69</priority></url>
+<url><loc>http://www.royaltripmakers.com/package/malaysia-tour-/</loc><changefreq>weekly</changefreq><priority>0.69</priority></url>
+<url><loc>http://www.royaltripmakers.com/package/splendid-singapore/</loc><changefreq>weekly</changefreq><priority>0.69</priority></url>
+<url><loc>http://www.royaltripmakers.com/package/tarkarli-tour/</loc><changefreq>weekly</changefreq><priority>0.69</priority></url>
+<url><loc>http://www.royaltripmakers.com/package/maldives-trip/</loc><changefreq>weekly</changefreq><priority>0.69</priority></url>
+<url><loc>http://www.royaltripmakers.com/package/goa-trip-ex-mumbai/</loc><changefreq>weekly</changefreq><priority>0.69</priority></url>
+<url><loc>http://www.royaltripmakers.com/package/goa-special-ex-mumbai-/</loc><changefreq>weekly</changefreq><priority>0.69</priority></url>
+<url><loc>http://www.royaltripmakers.com/package/goa-beaches-ex-hyderabad/</loc><changefreq>weekly</changefreq><priority>0.69</priority></url>
+<url><loc>http://www.royaltripmakers.com/package/goa-holidays-ex-hyderabad/</loc><changefreq>weekly</changefreq><priority>0.69</priority></url>
+<url><loc>http://www.royaltripmakers.com/package/panchbhoota-linga---south-india/</loc><changefreq>weekly</changefreq><priority>0.69</priority></url>
+<url><loc>http://www.royaltripmakers.com/package/buddha-darshan/</loc><changefreq>weekly</changefreq><priority>0.69</priority></url>
+<url><loc>http://www.royaltripmakers.com/package/seven-devi-dham-trip/</loc><changefreq>weekly</changefreq><priority>0.69</priority></url>
+<url><loc>http://www.royaltripmakers.com/package/gangasagar-yatra/</loc><changefreq>weekly</changefreq><priority>0.69</priority></url>
+<url><loc>http://www.royaltripmakers.com/package/tirupati-balaji-darshan/</loc><changefreq>weekly</changefreq><priority>0.69</priority></url>
+<url><loc>http://www.royaltripmakers.com/package/tirupati-balaji-ex-bangalore/</loc><changefreq>weekly</changefreq><priority>0.69</priority></url>
+<url><loc>http://www.royaltripmakers.com/package/tirupati-balaji-ex-chennai/</loc><changefreq>weekly</changefreq><priority>0.69</priority></url>
+<url><loc>http://royaltripmakers.com</loc><changefreq>weekly</changefreq><priority>0.69</priority></url>
+<url><loc>http://royaltripmakers.com/listing-tour/</loc><changefreq>weekly</changefreq><priority>0.69</priority></url>
+<url><loc>http://royaltripmakers.com/reviewed-and-verified/</loc><changefreq>weekly</changefreq><priority>0.69</priority></url>
+<url><loc>http://royaltripmakers.com/vip-access/</loc><changefreq>weekly</changefreq><priority>0.69</priority></url>
+<url><loc>http://royaltripmakers.com/low-price-guaranteed/</loc><changefreq>weekly</changefreq><priority>0.69</priority></url>
+<url><loc>http://royaltripmakers.com/customer-support/</loc><changefreq>weekly</changefreq><priority>0.69</priority></url>
+<url><loc>http://royaltripmakers.com/package/amarnath-yatra-ex-sonmarg/</loc><changefreq>weekly</changefreq><priority>0.69</priority></url>
+<url><loc>http://royaltripmakers.com/package/amarnath-yatra-ex-srinagar/</loc><changefreq>weekly</changefreq><priority>0.69</priority></url>
+<url><loc>http://royaltripmakers.com/package/amarnath-devotional-yatra-/</loc><changefreq>weekly</changefreq><priority>0.69</priority></url>
+<url><loc>http://royaltripmakers.com/package/amarnath-shivling-tour/</loc><changefreq>weekly</changefreq><priority>0.69</priority></url>
+<url><loc>http://royaltripmakers.com/package/andaman-classic-tour/</loc><changefreq>weekly</changefreq><priority>0.69</priority></url>
+<url><loc>http://royaltripmakers.com/package/andaman-weekend/</loc><changefreq>weekly</changefreq><priority>0.69</priority></url>
+<url><loc>http://royaltripmakers.com/package/glimpse-of-andaman/</loc><changefreq>weekly</changefreq><priority>0.69</priority></url>
+<url><loc>http://royaltripmakers.com/package/magical-andaman/</loc><changefreq>weekly</changefreq><priority>0.69</priority></url>
+<url><loc>http://royaltripmakers.com/package/scintillating-singapore-with-cruise-/</loc><changefreq>weekly</changefreq><priority>0.69</priority></url>
+<url><loc>http://royaltripmakers.com/package/beautiful-singapore-/</loc><changefreq>weekly</changefreq><priority>0.69</priority></url>
+<url><loc>http://royaltripmakers.com/package/singapore-cruise-trip-/</loc><changefreq>weekly</changefreq><priority>0.69</priority></url>
+<url><loc>http://royaltripmakers.com/package/malaysia-tour-/</loc><changefreq>weekly</changefreq><priority>0.69</priority></url>
+<url><loc>http://royaltripmakers.com/package/splendid-singapore/</loc><changefreq>weekly</changefreq><priority>0.69</priority></url>
+<url><loc>http://royaltripmakers.com/package/goa-honeymoon/</loc><changefreq>weekly</changefreq><priority>0.69</priority></url>
+<url><loc>http://royaltripmakers.com/package/tarkarli-tour/</loc><changefreq>weekly</changefreq><priority>0.69</priority></url>
+<url><loc>http://royaltripmakers.com/package/maldives-trip/</loc><changefreq>weekly</changefreq><priority>0.69</priority></url>
+<url><loc>http://royaltripmakers.com/package/chardham-yatra-09-n/</loc><changefreq>weekly</changefreq><priority>0.69</priority></url>
+<url><loc>http://royaltripmakers.com/package/chardham-package-ex-manali-13-n/</loc><changefreq>weekly</changefreq><priority>0.69</priority></url>
+<url><loc>http://royaltripmakers.com/package/chardham-yatra-ex-haridwar-11-n/</loc><changefreq>weekly</changefreq><priority>0.69</priority></url>
+<url><loc>http://royaltripmakers.com/package/chardham-package-ex-manali-14-n/</loc><changefreq>weekly</changefreq><priority>0.69</priority></url>
+<url><loc>http://royaltripmakers.com/package/chardham-yatra-ex-delhi-10-n/</loc><changefreq>weekly</changefreq><priority>0.69</priority></url>
+<url><loc>http://royaltripmakers.com/package/chardham-yatra-ex-haridwar-09-n/</loc><changefreq>weekly</changefreq><priority>0.69</priority></url>
+<url><loc>http://royaltripmakers.com/package/do-dham-yatra-with-haridwar/</loc><changefreq>weekly</changefreq><priority>0.69</priority></url>
+<url><loc>http://royaltripmakers.com/package/pattaya-tours/</loc><changefreq>weekly</changefreq><priority>0.69</priority></url>
+<url><loc>http://royaltripmakers.com/package/bangkok-pattaya-special/</loc><changefreq>weekly</changefreq><priority>0.69</priority></url>
+<url><loc>http://royaltripmakers.com/package/pattaya-phuket-trip/</loc><changefreq>weekly</changefreq><priority>0.69</priority></url>
+<url><loc>http://royaltripmakers.com/package/kathmandu-valley-tour/</loc><changefreq>weekly</changefreq><priority>0.69</priority></url>
+<url><loc>http://royaltripmakers.com/package/kathmandu-and-patan-city-tour/</loc><changefreq>weekly</changefreq><priority>0.69</priority></url>
+<url><loc>http://royaltripmakers.com/package/patan-and-bhaktapur-trip/</loc><changefreq>weekly</changefreq><priority>0.69</priority></url>
+<url><loc>http://royaltripmakers.com/package/kathmandu-patan-city-tour/</loc><changefreq>weekly</changefreq><priority>0.69</priority></url>
+<url><loc>http://royaltripmakers.com/package/chitwan-wildlife-tour/</loc><changefreq>weekly</changefreq><priority>0.69</priority></url>
+<url><loc>http://royaltripmakers.com/package/pokhara-trekking-sites/</loc><changefreq>weekly</changefreq><priority>0.69</priority></url>
+<url><loc>http://royaltripmakers.com/package/mountain-trekking-trip/</loc><changefreq>weekly</changefreq><priority>0.69</priority></url>
+<url><loc>http://royaltripmakers.com/package/kailash-mansarovar-yatra/</loc><changefreq>weekly</changefreq><priority>0.69</priority></url>
+<url><loc>http://www.royaltripmakers.com/package/up-pilgrim-tour/</loc><changefreq>weekly</changefreq><priority>0.69</priority></url>
+<url><loc>http://www.royaltripmakers.com/package/manali-tour-ex---delhi/</loc><changefreq>weekly</changefreq><priority>0.69</priority></url>
+<url><loc>http://www.royaltripmakers.com/package/shimla-manali-ex-delhi/</loc><changefreq>weekly</changefreq><priority>0.69</priority></url>
+<url><loc>http://www.royaltripmakers.com/package/chail-camping/</loc><changefreq>weekly</changefreq><priority>0.69</priority></url>
+<url><loc>http://www.royaltripmakers.com/package/summer-hill-tour-ex-delhi/</loc><changefreq>weekly</changefreq><priority>0.69</priority></url>
+<url><loc>http://www.royaltripmakers.com/package/himachal-temple-tour/</loc><changefreq>weekly</changefreq><priority>0.69</priority></url>
+<url><loc>http://www.royaltripmakers.com/package/devi-darshan-tour/</loc><changefreq>weekly</changefreq><priority>0.69</priority></url>
+<url><loc>http://www.royaltripmakers.com/package/darjeeling-tour/</loc><changefreq>weekly</changefreq><priority>0.69</priority></url>
+<url><loc>http://www.royaltripmakers.com/package/sikkim-special/</loc><changefreq>weekly</changefreq><priority>0.69</priority></url>
+<url><loc>http://www.royaltripmakers.com/package/north-east-winter-tour/</loc><changefreq>weekly</changefreq><priority>0.69</priority></url>
+<url><loc>http://www.royaltripmakers.com/package/amarnath-yatra-ex-sonmarg/</loc><changefreq>weekly</changefreq><priority>0.69</priority></url>
+<url><loc>http://www.royaltripmakers.com/package/amarnath-yatra-ex-srinagar/</loc><changefreq>weekly</changefreq><priority>0.69</priority></url>
+<url><loc>http://www.royaltripmakers.com/package/amarnath-devotional-yatra-/</loc><changefreq>weekly</changefreq><priority>0.69</priority></url>
+<url><loc>http://www.royaltripmakers.com/package/amarnath-shivling-tour/</loc><changefreq>weekly</changefreq><priority>0.69</priority></url>
+<url><loc>http://www.royaltripmakers.com/package/pattaya-tours/</loc><changefreq>weekly</changefreq><priority>0.69</priority></url>
+<url><loc>http://www.royaltripmakers.com/package/pattaya-phuket-trip/</loc><changefreq>weekly</changefreq><priority>0.69</priority></url>
+<url><loc>http://www.royaltripmakers.com/package/gujrat-jyotirling-tour/</loc><changefreq>weekly</changefreq><priority>0.69</priority></url>
+<url><loc>http://www.royaltripmakers.com/package/somnath-darshan-ex-dwarka/</loc><changefreq>weekly</changefreq><priority>0.69</priority></url>
+<url><loc>http://www.royaltripmakers.com/package/gujrat-tour/</loc><changefreq>weekly</changefreq><priority>0.69</priority></url>
+<url><loc>http://www.royaltripmakers.com/package/saurastra-darshan/</loc><changefreq>weekly</changefreq><priority>0.69</priority></url>
+<url><loc>http://www.royaltripmakers.com/package/kerela-adventure-trip/</loc><changefreq>weekly</changefreq><priority>0.69</priority></url>
+<url><loc>http://www.royaltripmakers.com/package/munnar-athirapally-honeymoon-package/</loc><changefreq>weekly</changefreq><priority>0.69</priority></url>
+<url><loc>http://www.royaltripmakers.com/package/classic-kerela-tour/</loc><changefreq>weekly</changefreq><priority>0.69</priority></url>
+<url><loc>http://www.royaltripmakers.com/package/kovalam-package/</loc><changefreq>weekly</changefreq><priority>0.69</priority></url>
+<url><loc>http://www.royaltripmakers.com/package/essence-of-malabar/</loc><changefreq>weekly</changefreq><priority>0.69</priority></url>
+<url><loc>http://www.royaltripmakers.com/package/enchanting-kerela/</loc><changefreq>weekly</changefreq><priority>0.69</priority></url>
+<url><loc>http://www.royaltripmakers.com/package/sri-lanka-classic-tour/</loc><changefreq>weekly</changefreq><priority>0.69</priority></url>
+<url><loc>http://www.royaltripmakers.com/package/ramayana-package-/</loc><changefreq>weekly</changefreq><priority>0.69</priority></url>
+<url><loc>http://www.royaltripmakers.com/package/sri-lanka-family-tour/</loc><changefreq>weekly</changefreq><priority>0.69</priority></url>
+<url><loc>http://www.royaltripmakers.com/package/kathmandu-valley-tour/</loc><changefreq>weekly</changefreq><priority>0.69</priority></url>
+<url><loc>http://www.royaltripmakers.com/package/kathmandu-and-patan-city-tour/</loc><changefreq>weekly</changefreq><priority>0.69</priority></url>
+<url><loc>http://www.royaltripmakers.com/package/patan-and-bhaktapur-trip/</loc><changefreq>weekly</changefreq><priority>0.69</priority></url>
+<url><loc>http://www.royaltripmakers.com/package/kathmandu-patan-city-tour/</loc><changefreq>weekly</changefreq><priority>0.69</priority></url>
+<url><loc>http://www.royaltripmakers.com/package/chitwan-wildlife-tour/</loc><changefreq>weekly</changefreq><priority>0.69</priority></url>
+<url><loc>http://www.royaltripmakers.com/package/pokhara-trekking-sites/</loc><changefreq>weekly</changefreq><priority>0.69</priority></url>
+<url><loc>http://www.royaltripmakers.com/package/mountain-trekking-trip/</loc><changefreq>weekly</changefreq><priority>0.69</priority></url>
+<url><loc>http://www.royaltripmakers.com/package/kailash-mansarovar-yatra/</loc><changefreq>weekly</changefreq><priority>0.69</priority></url>
+<url><loc>http://www.royaltripmakers.com/package/diamond-tour/</loc><changefreq>weekly</changefreq><priority>0.69</priority></url>
+<url><loc>http://www.royaltripmakers.com/package/pushkar-special-tour/</loc><changefreq>weekly</changefreq><priority>0.69</priority></url>
+<url><loc>http://www.royaltripmakers.com/package/colorful-rajasthan-tour/</loc><changefreq>weekly</changefreq><priority>0.69</priority></url>
+<url><loc>http://www.royaltripmakers.com/package/splendor-rajasthan-/</loc><changefreq>weekly</changefreq><priority>0.69</priority></url>
+<url><loc>http://www.royaltripmakers.com/package/rajasthan-honeymoon-package/</loc><changefreq>weekly</changefreq><priority>0.69</priority></url>
+<url><loc>http://www.royaltripmakers.com/package/royal-dubai-tour/</loc><changefreq>weekly</changefreq><priority>0.69</priority></url>
+<url><loc>http://www.royaltripmakers.com/package/special-dubai-tour/</loc><changefreq>weekly</changefreq><priority>0.69</priority></url>
+<url><loc>http://www.royaltripmakers.com/package/dubai-with-hop-on-hop-off-tour/</loc><changefreq>weekly</changefreq><priority>0.69</priority></url>
+<url><loc>http://www.royaltripmakers.com/package/dubai-ferrari-trip/</loc><changefreq>weekly</changefreq><priority>0.69</priority></url>
+<url><loc>http://www.royaltripmakers.com/package/dubai---dhow-dinner-cruise/</loc><changefreq>weekly</changefreq><priority>0.69</priority></url>
+<url><loc>http://www.royaltripmakers.com/package/mahabaleshwar-trip/</loc><changefreq>weekly</changefreq><priority>0.69</priority></url>
+<url><loc>http://www.royaltripmakers.com/package/ashtvinayak-trip/</loc><changefreq>weekly</changefreq><priority>0.69</priority></url>
+<url><loc>http://www.royaltripmakers.com/package/silvassa-tour/</loc><changefreq>weekly</changefreq><priority>0.69</priority></url>
+<url><loc>http://www.royaltripmakers.com/package/matheran-tour/</loc><changefreq>weekly</changefreq><priority>0.69</priority></url>
+<url><loc>http://www.royaltripmakers.com/package/shirdi-darshan/</loc><changefreq>weekly</changefreq><priority>0.69</priority></url>
+<url><loc>http://www.royaltripmakers.com/package/paradise-bhutan/</loc><changefreq>weekly</changefreq><priority>0.69</priority></url>
+<url><loc>http://www.royaltripmakers.com/package/bhutan-tour/</loc><changefreq>weekly</changefreq><priority>0.69</priority></url>
+<url><loc>http://www.royaltripmakers.com/package/royal-bhutan-tour/</loc><changefreq>weekly</changefreq><priority>0.69</priority></url>
+<url><loc>http://www.royaltripmakers.com/package/bhutan-trip/</loc><changefreq>weekly</changefreq><priority>0.69</priority></url>
+<url><loc>http://www.royaltripmakers.com/package/jaipur-industrial-visit/</loc><changefreq>weekly</changefreq><priority>0.69</priority></url>
+<url><loc>http://www.royaltripmakers.com/package/indore-industrial-tour/</loc><changefreq>weekly</changefreq><priority>0.69</priority></url>
+<url><loc>http://www.royaltripmakers.com/package/udaipur-industrial-visit/</loc><changefreq>weekly</changefreq><priority>0.69</priority></url>
+<url><loc>http://www.royaltripmakers.com/package/agra-industrial-tour/</loc><changefreq>weekly</changefreq><priority>0.69</priority></url>
+<url><loc>http://www.royaltripmakers.com/package/delhi-industrial-visit/</loc><changefreq>weekly</changefreq><priority>0.69</priority></url>
+<url><loc>http://www.royaltripmakers.com/package/nainital-industrial-tour/</loc><changefreq>weekly</changefreq><priority>0.69</priority></url>
+<url><loc>http://www.royaltripmakers.com/package/darjeeling-industrial-tour/</loc><changefreq>weekly</changefreq><priority>0.69</priority></url>
+<url><loc>http://www.royaltripmakers.com/package/kolkata-industrial-visit/</loc><changefreq>weekly</changefreq><priority>0.69</priority></url>
+<url><loc>http://www.royaltripmakers.com/package/sikkim-industrial-visit/</loc><changefreq>weekly</changefreq><priority>0.69</priority></url>
+<url><loc>http://www.royaltripmakers.com/package/gwalior-industrial-tours/</loc><changefreq>weekly</changefreq><priority>0.69</priority></url>
+<url><loc>http://www.royaltripmakers.com/package/goa-industrial-visit/</loc><changefreq>weekly</changefreq><priority>0.69</priority></url>
+<url><loc>http://www.royaltripmakers.com/package/manali-industrial-visit/</loc><changefreq>weekly</changefreq><priority>0.69</priority></url>
+<url><loc>http://royaltripmakers.com/tour/jammu-and-kashmir/</loc><changefreq>weekly</changefreq><priority>0.56</priority></url>
+<url><loc>http://royaltripmakers.com/tour/europe-trip/</loc><changefreq>weekly</changefreq><priority>0.56</priority></url>
+<url><loc>http://royaltripmakers.com/tour/uttrakhand-trip/</loc><changefreq>weekly</changefreq><priority>0.56</priority></url>
+<url><loc>http://royaltripmakers.com/tour/goa-package/</loc><changefreq>weekly</changefreq><priority>0.56</priority></url>
+<url><loc>http://royaltripmakers.com/tour/indian-pilgrimage/</loc><changefreq>weekly</changefreq><priority>0.56</priority></url>
+<url><loc>http://royaltripmakers.com/tour/himachal-pradesh/</loc><changefreq>weekly</changefreq><priority>0.56</priority></url>
+<url><loc>http://royaltripmakers.com/tour/north-east-india/</loc><changefreq>weekly</changefreq><priority>0.56</priority></url>
+<url><loc>http://royaltripmakers.com/tour/gujrat-darshan/</loc><changefreq>weekly</changefreq><priority>0.56</priority></url>
+<url><loc>http://royaltripmakers.com/tour/kerela-holidays/</loc><changefreq>weekly</changefreq><priority>0.56</priority></url>
+<url><loc>http://royaltripmakers.com/tour/sri-lanka-special/</loc><changefreq>weekly</changefreq><priority>0.56</priority></url>
+<url><loc>http://royaltripmakers.com/tour/royal-rajasthan-/</loc><changefreq>weekly</changefreq><priority>0.56</priority></url>
+<url><loc>http://royaltripmakers.com/tour/dubai-travel/</loc><changefreq>weekly</changefreq><priority>0.56</priority></url>
+<url><loc>http://royaltripmakers.com/tour/maharashtra/</loc><changefreq>weekly</changefreq><priority>0.56</priority></url>
+<url><loc>http://royaltripmakers.com/tour/bhutan-camping/</loc><changefreq>weekly</changefreq><priority>0.56</priority></url>
+<url><loc>http://royaltripmakers.com/tour/industrial-visit/</loc><changefreq>weekly</changefreq><priority>0.56</priority></url>
+<url><loc>http://royaltripmakers.com/theme/pilgrimage-trip/</loc><changefreq>weekly</changefreq><priority>0.56</priority></url>
+<url><loc>http://royaltripmakers.com/theme/international-trip/</loc><changefreq>weekly</changefreq><priority>0.56</priority></url>
+<url><loc>http://royaltripmakers.com/theme/honeymoon-trip/</loc><changefreq>weekly</changefreq><priority>0.56</priority></url>
+<url><loc>http://royaltripmakers.com/theme/hill-stations-tour/</loc><changefreq>weekly</changefreq><priority>0.56</priority></url>
+<url><loc>http://royaltripmakers.com/theme/beach-holidays/</loc><changefreq>weekly</changefreq><priority>0.56</priority></url>
+<url><loc>http://royaltripmakers.com/theme/adventure-and-wildlife/</loc><changefreq>weekly</changefreq><priority>0.56</priority></url>
+<url><loc>http://royaltripmakers.com/theme/cruise-special/</loc><changefreq>weekly</changefreq><priority>0.56</priority></url>
+<url><loc>http://royaltripmakers.com/package/royal-rajasthan-with-delhi-and-agra/</loc><changefreq>weekly</changefreq><priority>0.56</priority></url>
+<url><loc>http://royaltripmakers.com/package/himachal-darshan/</loc><changefreq>weekly</changefreq><priority>0.56</priority></url>
+<url><loc>http://royaltripmakers.com/package/gujrat-jyotirling-darshan/</loc><changefreq>weekly</changefreq><priority>0.56</priority></url>
+<url><loc>http://royaltripmakers.com/package/gangtok-tour/</loc><changefreq>weekly</changefreq><priority>0.56</priority></url>
+<url><loc>http://royaltripmakers.com/package/gulmarg-tour-ex-srinagar/</loc><changefreq>weekly</changefreq><priority>0.56</priority></url>
+<url><loc>http://royaltripmakers.com/package/glorious-kashmir/</loc><changefreq>weekly</changefreq><priority>0.56</priority></url>
+<url><loc>http://royaltripmakers.com/package/vaishno-devi-trip/</loc><changefreq>weekly</changefreq><priority>0.56</priority></url>
+<url><loc>http://royaltripmakers.com/package/scenic-kashmir/</loc><changefreq>weekly</changefreq><priority>0.56</priority></url>
+<url><loc>http://royaltripmakers.com/package/mata-vaishno-devi-yatra/</loc><changefreq>weekly</changefreq><priority>0.56</priority></url>
+<url><loc>http://royaltripmakers.com/package/discover-europe-/</loc><changefreq>weekly</changefreq><priority>0.56</priority></url>
+<url><loc>http://royaltripmakers.com/package/exploring-europe/</loc><changefreq>weekly</changefreq><priority>0.56</priority></url>
+<url><loc>http://royaltripmakers.com/package/majestic-europe/</loc><changefreq>weekly</changefreq><priority>0.56</priority></url>
+<url><loc>http://royaltripmakers.com/package/beautiful-europe-/</loc><changefreq>weekly</changefreq><priority>0.56</priority></url>
+<url><loc>http://royaltripmakers.com/package/camping-tour-/</loc><changefreq>weekly</changefreq><priority>0.56</priority></url>
+<url><loc>http://royaltripmakers.com/package/corbett-safari-tour/</loc><changefreq>weekly</changefreq><priority>0.56</priority></url>
+<url><loc>http://royaltripmakers.com/package/nainital-kausani-trip/</loc><changefreq>weekly</changefreq><priority>0.56</priority></url>
+<url><loc>http://royaltripmakers.com/package/splendour-kumao-trip/</loc><changefreq>weekly</changefreq><priority>0.56</priority></url>
+<url><loc>http://royaltripmakers.com/package/kausani-trip/</loc><changefreq>weekly</changefreq><priority>0.56</priority></url>
+<url><loc>http://royaltripmakers.com/package/goa-trip-ex-mumbai/</loc><changefreq>weekly</changefreq><priority>0.56</priority></url>
+<url><loc>http://royaltripmakers.com/package/goa-special-ex-mumbai-/</loc><changefreq>weekly</changefreq><priority>0.56</priority></url>
+<url><loc>http://royaltripmakers.com/package/goa-beaches-ex-hyderabad/</loc><changefreq>weekly</changefreq><priority>0.56</priority></url>
+<url><loc>http://royaltripmakers.com/package/goa-holidays-ex-hyderabad/</loc><changefreq>weekly</changefreq><priority>0.56</priority></url>
+<url><loc>http://royaltripmakers.com/package/panchbhoota-linga---south-india/</loc><changefreq>weekly</changefreq><priority>0.56</priority></url>
+<url><loc>http://royaltripmakers.com/package/buddha-darshan/</loc><changefreq>weekly</changefreq><priority>0.56</priority></url>
+<url><loc>http://royaltripmakers.com/package/seven-devi-dham-trip/</loc><changefreq>weekly</changefreq><priority>0.56</priority></url>
+<url><loc>http://royaltripmakers.com/package/gangasagar-yatra/</loc><changefreq>weekly</changefreq><priority>0.56</priority></url>
+<url><loc>http://royaltripmakers.com/package/tirupati-balaji-darshan/</loc><changefreq>weekly</changefreq><priority>0.56</priority></url>
+<url><loc>http://royaltripmakers.com/package/tirupati-balaji-ex-bangalore/</loc><changefreq>weekly</changefreq><priority>0.56</priority></url>
+<url><loc>http://royaltripmakers.com/package/tirupati-balaji-ex-chennai/</loc><changefreq>weekly</changefreq><priority>0.56</priority></url>
+<url><loc>http://royaltripmakers.com/package/up-pilgrim-tour/</loc><changefreq>weekly</changefreq><priority>0.46</priority></url>
+<url><loc>http://royaltripmakers.com/package/manali-tour-ex---delhi/</loc><changefreq>weekly</changefreq><priority>0.46</priority></url>
+<url><loc>http://royaltripmakers.com/package/shimla-manali-ex-delhi/</loc><changefreq>weekly</changefreq><priority>0.46</priority></url>
+<url><loc>http://royaltripmakers.com/package/chail-camping/</loc><changefreq>weekly</changefreq><priority>0.46</priority></url>
+<url><loc>http://royaltripmakers.com/package/summer-hill-tour-ex-delhi/</loc><changefreq>weekly</changefreq><priority>0.46</priority></url>
+<url><loc>http://royaltripmakers.com/package/himachal-temple-tour/</loc><changefreq>weekly</changefreq><priority>0.46</priority></url>
+<url><loc>http://royaltripmakers.com/package/devi-darshan-tour/</loc><changefreq>weekly</changefreq><priority>0.46</priority></url>
+<url><loc>http://royaltripmakers.com/package/darjeeling-tour/</loc><changefreq>weekly</changefreq><priority>0.46</priority></url>
+<url><loc>http://royaltripmakers.com/package/sikkim-special/</loc><changefreq>weekly</changefreq><priority>0.46</priority></url>
+<url><loc>http://royaltripmakers.com/package/north-east-winter-tour/</loc><changefreq>weekly</changefreq><priority>0.46</priority></url>
+<url><loc>http://royaltripmakers.com/package/gujrat-jyotirling-tour/</loc><changefreq>weekly</changefreq><priority>0.46</priority></url>
+<url><loc>http://royaltripmakers.com/package/somnath-darshan-ex-dwarka/</loc><changefreq>weekly</changefreq><priority>0.46</priority></url>
+<url><loc>http://royaltripmakers.com/package/gujrat-tour/</loc><changefreq>weekly</changefreq><priority>0.46</priority></url>
+<url><loc>http://royaltripmakers.com/package/saurastra-darshan/</loc><changefreq>weekly</changefreq><priority>0.46</priority></url>
+<url><loc>http://royaltripmakers.com/package/kerela-adventure-trip/</loc><changefreq>weekly</changefreq><priority>0.46</priority></url>
+<url><loc>http://royaltripmakers.com/package/munnar-athirapally-honeymoon-package/</loc><changefreq>weekly</changefreq><priority>0.46</priority></url>
+<url><loc>http://royaltripmakers.com/package/classic-kerela-tour/</loc><changefreq>weekly</changefreq><priority>0.46</priority></url>
+<url><loc>http://royaltripmakers.com/package/kovalam-package/</loc><changefreq>weekly</changefreq><priority>0.46</priority></url>
+<url><loc>http://royaltripmakers.com/package/essence-of-malabar/</loc><changefreq>weekly</changefreq><priority>0.46</priority></url>
+<url><loc>http://royaltripmakers.com/package/enchanting-kerela/</loc><changefreq>weekly</changefreq><priority>0.46</priority></url>
+<url><loc>http://royaltripmakers.com/package/sri-lanka-classic-tour/</loc><changefreq>weekly</changefreq><priority>0.46</priority></url>
+<url><loc>http://royaltripmakers.com/package/ramayana-package-/</loc><changefreq>weekly</changefreq><priority>0.46</priority></url>
+<url><loc>http://royaltripmakers.com/package/sri-lanka-family-tour/</loc><changefreq>weekly</changefreq><priority>0.46</priority></url>
+<url><loc>http://royaltripmakers.com/package/diamond-tour/</loc><changefreq>weekly</changefreq><priority>0.46</priority></url>
+<url><loc>http://royaltripmakers.com/package/pushkar-special-tour/</loc><changefreq>weekly</changefreq><priority>0.46</priority></url>
+<url><loc>http://royaltripmakers.com/package/colorful-rajasthan-tour/</loc><changefreq>weekly</changefreq><priority>0.46</priority></url>
+<url><loc>http://royaltripmakers.com/package/splendor-rajasthan-/</loc><changefreq>weekly</changefreq><priority>0.46</priority></url>
+<url><loc>http://royaltripmakers.com/package/rajasthan-honeymoon-package/</loc><changefreq>weekly</changefreq><priority>0.46</priority></url>
+<url><loc>http://royaltripmakers.com/package/royal-dubai-tour/</loc><changefreq>weekly</changefreq><priority>0.46</priority></url>
+<url><loc>http://royaltripmakers.com/package/special-dubai-tour/</loc><changefreq>weekly</changefreq><priority>0.46</priority></url>
+<url><loc>http://royaltripmakers.com/package/dubai-with-hop-on-hop-off-tour/</loc><changefreq>weekly</changefreq><priority>0.46</priority></url>
+<url><loc>http://royaltripmakers.com/package/dubai-ferrari-trip/</loc><changefreq>weekly</changefreq><priority>0.46</priority></url>
+<url><loc>http://royaltripmakers.com/package/dubai---dhow-dinner-cruise/</loc><changefreq>weekly</changefreq><priority>0.46</priority></url>
+<url><loc>http://royaltripmakers.com/package/mahabaleshwar-trip/</loc><changefreq>weekly</changefreq><priority>0.46</priority></url>
+<url><loc>http://royaltripmakers.com/package/ashtvinayak-trip/</loc><changefreq>weekly</changefreq><priority>0.46</priority></url>
+<url><loc>http://royaltripmakers.com/package/silvassa-tour/</loc><changefreq>weekly</changefreq><priority>0.46</priority></url>
+<url><loc>http://royaltripmakers.com/package/matheran-tour/</loc><changefreq>weekly</changefreq><priority>0.46</priority></url>
+<url><loc>http://royaltripmakers.com/package/shirdi-darshan/</loc><changefreq>weekly</changefreq><priority>0.46</priority></url>
+<url><loc>http://royaltripmakers.com/package/paradise-bhutan/</loc><changefreq>weekly</changefreq><priority>0.46</priority></url>
+<url><loc>http://royaltripmakers.com/package/bhutan-tour/</loc><changefreq>weekly</changefreq><priority>0.46</priority></url>
+<url><loc>http://royaltripmakers.com/package/royal-bhutan-tour/</loc><changefreq>weekly</changefreq><priority>0.46</priority></url>
+<url><loc>http://royaltripmakers.com/package/bhutan-trip/</loc><changefreq>weekly</changefreq><priority>0.46</priority></url>
+<url><loc>http://royaltripmakers.com/package/jaipur-industrial-visit/</loc><changefreq>weekly</changefreq><priority>0.46</priority></url>
+<url><loc>http://royaltripmakers.com/package/indore-industrial-tour/</loc><changefreq>weekly</changefreq><priority>0.46</priority></url>
+<url><loc>http://royaltripmakers.com/package/udaipur-industrial-visit/</loc><changefreq>weekly</changefreq><priority>0.46</priority></url>
+<url><loc>http://royaltripmakers.com/package/agra-industrial-tour/</loc><changefreq>weekly</changefreq><priority>0.46</priority></url>
+<url><loc>http://royaltripmakers.com/package/delhi-industrial-visit/</loc><changefreq>weekly</changefreq><priority>0.46</priority></url>
+<url><loc>http://royaltripmakers.com/package/nainital-industrial-tour/</loc><changefreq>weekly</changefreq><priority>0.46</priority></url>
+<url><loc>http://royaltripmakers.com/package/darjeeling-industrial-tour/</loc><changefreq>weekly</changefreq><priority>0.46</priority></url>
+<url><loc>http://royaltripmakers.com/package/kolkata-industrial-visit/</loc><changefreq>weekly</changefreq><priority>0.46</priority></url>
+<url><loc>http://royaltripmakers.com/package/sikkim-industrial-visit/</loc><changefreq>weekly</changefreq><priority>0.46</priority></url>
+<url><loc>http://royaltripmakers.com/package/gwalior-industrial-tours/</loc><changefreq>weekly</changefreq><priority>0.46</priority></url>
+<url><loc>http://royaltripmakers.com/package/goa-industrial-visit/</loc><changefreq>weekly</changefreq><priority>0.46</priority></url>
+<url><loc>http://royaltripmakers.com/package/manali-industrial-visit/</loc><changefreq>weekly</changefreq><priority>0.46</priority></url>
+<!-- Generated by www.web-site-map.com -->
 </urlset>

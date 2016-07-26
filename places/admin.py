@@ -7,7 +7,7 @@ from django.template.loader import render_to_string
 from django.utils.html import strip_tags
 # Register your models here.
 
-from .models import PlanMyTrip,BestSelling,Places,PlaceImages ,GalleryImages,Iternary,IternaryImages,Enquiry,IternaryEnquiry,VipAccess,InfoIternary,Themes,SliderImages,ReviewVerified
+from .models import  Sitemap,PlanMyTrip,BestSelling,Places,PlaceImages ,GalleryImages,Iternary,IternaryImages,Enquiry,IternaryEnquiry,VipAccess,InfoIternary,Themes,SliderImages,ReviewVerified
 from django.contrib.auth.models import User, Group
 
 class PlacesAdmin(admin.ModelAdmin):
@@ -73,12 +73,16 @@ class PlanMyTripAdmin(admin.ModelAdmin):
     model=PlanMyTrip
     list_display = ['name','date',]
 
+class SitemapAdmin(admin.ModelAdmin):
+    model=Sitemap
+
 class GalleryImagesAdmin(admin.ModelAdmin):
     model=GalleryImages
     #list_display = ['place.name',]
     #ordering=('name',)
   
 # Register your models here.
+admin.site.register(Sitemap,SitemapAdmin)
 admin.site.register(Places,PlacesAdmin)
 admin.site.register(PlaceImages)
 admin.site.register(BestSelling,BestSellingAdmin)
@@ -94,5 +98,5 @@ admin.site.register(Themes,ThemesAdmin)
 admin.site.register(SliderImages)
 admin.site.register(PlanMyTrip,PlanMyTripAdmin)
 
-admin.site.unregister(User)
-admin.site.unregister(Group)
+#admin.site.unregister(User)
+#admin.site.unregister(Group)
