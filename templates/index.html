@@ -221,49 +221,46 @@
 <!-- /container -->
 
 {% endblock %} {%block image_gallery %}
-<div class="overlay" >
-<form method="get" >{% csrf_token %}
-<input type="text" name ="q" class="input" id="q" placeholder="Search your dream destination Here" minlength=2 required>
-<button type="submit" name="search" class="btn btn-primary"><span class="glyphicon glyphicon-search" aria-hidden="true"></span> </button>
-</form>
-</div>
-<div id="myCarousel" class="carousel slide" data-ride="carousel">
-	<!-- Indicators -->
-	<ol class="carousel-indicators">
-		<li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-		<li data-target="#myCarousel" data-slide-to="1"></li>
-		<li data-target="#myCarousel" data-slide-to="2"></li>
-		<li data-target="#myCarousel" data-slide-to="3"></li>
-	</ol>
-	<!-- Wrapper for slides -->
-
-<div class="carousel-inner" role="listbox">
-    {% for slider in slider %}
+<div class='row'>
+		<div class='col-sm-12'>
+			<div class="carousel slide" data-ride="carousel" id="quote-carousel">
+				<!-- Bottom Carousel Indicators -->
+				<ol class="carousel-indicators">
+					<li data-target="#quote-carousel" data-slide-to="0" class="active"></li>
+					<li data-target="#quote-carousel" data-slide-to="1"></li>
+					<li data-target="#quote-carousel" data-slide-to="2"></li>
+				</ol>
+				<!-- Carousel Slides / Quotes -->
+				 <div class="carousel-inner" role="listbox">
+  {% for slider in slider %}
     {% if forloop.counter == 1 %}
     <div class="item active">
     {% else %}
     <div class="item">
     {% endif %}
         <img src="{{ slider.image.url }}" alt="Image">
-           {% if slider.text %}
+      {% if slider.text %}
  <div class="overlay1">
-<p style=font-size:25px; class="ex1"><a href="{{slider.url_property}}" style="color: #FFFFFF"><blink>{{slider.text}}><blink></a></p>
+<p style=font-size:25px; class="ex1"><a href="{{slider.url_property}}" style="color: #FFFFFF">{{slider.text}}</a></p>
 </div>
     {% endif %}
     </div>
     {% endfor %}
     </div>
-</div>
- 
 
-	<!-- Left and right controls -->
-	<a class="left carousel-control" href="#myCarousel" role="button"
+				<!-- Carousel Buttons Next/Prev -->
+			
+	<a class="left carousel-control" href="#quote-carousel" role="button"
 		data-slide="prev"> <span class="glyphicon glyphicon-chevron-left"
 		aria-hidden="true"></span> <span class="sr-only">Previous</span>
-	</a> <a class="right carousel-control" href="#myCarousel" role="button"
+	</a> <a class="right carousel-control" href="#quote-carousel" role="button"
 		data-slide="next"> <span class="glyphicon glyphicon-chevron-right"
 		aria-hidden="true"></span> <span class="sr-only">Next</span>
 	</a>
+
+			</div>
+		</div>
+	</div>
 </div>
 {% endblock %} {%block home_subscribe_section %}
 <section id="newslatter" data-speed="6" data-type="background">
