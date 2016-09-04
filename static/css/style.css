@@ -325,6 +325,151 @@ h4 {
     top: 18px;
 }
 /*# sourceMappingURL=style.css.map */
+/* carousel1 */
+/* Changes the position of the indicators */
+
+
+
+#quote-carousel .carousel-indicators {
+
+    right: 50%;
+
+    display: none;
+
+    top: auto;
+
+    bottom: 0px;
+
+    margin-right: 19px;
+
+}
+/* carousel */
+
+
+
+#quote-carousel1 {
+
+    padding: 0 10px 30px 10px;
+
+    margin-top: 30px;
+
+}
+
+#quote-carousel1 .carousel-control {
+
+    display: block;
+
+    width: auto;
+
+}
+
+#quote-carousel1 .carousel-control img {
+
+    display: block;
+
+    width: auto;
+
+    height: auto;
+
+}
+
+/* Control buttons  */
+
+
+
+#quote-carousel1 .carousel-control {
+
+    background: none;
+
+    color: #222;
+
+    font-size: 2.3em;
+
+    text-shadow: none;
+
+    margin-top: 30px;
+
+}
+
+.testmonail-img {
+
+    height: 130px;
+
+    width: 130px;
+
+    float: left;
+
+    padding-left: 40px;
+
+    border-radius: 50%;
+
+}
+
+.testmonail-content {
+
+    font-size: 14px;
+
+    padding-left: 200px;
+
+    padding-right: 40px;
+
+    line-height: 24px;
+
+    color: #a2a2a2;
+
+}
+
+#quote-carousel1.author {
+
+    font-size: 14px;
+
+    color: #000;
+
+    padding-right: 40px;
+
+    font-style: italic;
+
+    text-align: right;
+
+}
+
+/* Previous button  */
+
+
+
+#quote-carousel1 .carousel-control.left {
+
+    left: 5px ;
+
+}
+
+/* Next button  */
+
+
+
+#quote-carousel1 .carousel-control.right {
+
+   margin-right: 5px;
+
+}
+
+/* Changes the position of the indicators */
+
+
+
+#quote-carousel1 .carousel-indicators {
+
+    right: 50%;
+
+    display: none;
+
+    top: auto;
+
+    bottom: 0px;
+
+    margin-right: 19px;
+
+}
 /* carousel */
 
 #quote-carousel {

@@ -147,7 +147,7 @@
 	</h2>
 	<div class='row'>
 		<div class='col-md-12'>
-			<div class="carousel slide" data-ride="carousel" id="quote-carousel1">
+			<div class="carousel slide" data-ride="carousel" id="quote-carousel">
 				<!-- Bottom Carousel Indicators -->
 				<ol class="carousel-indicators">
 					<li data-target="#quote-carousel" data-slide-to="0" class="active"></li>
@@ -208,10 +208,10 @@
 				</div>
 
 				<!-- Carousel Buttons Next/Prev -->
-				<a data-slide="prev" href="#quote-carousel1"
+				<a data-slide="prev" href="#quote-carousel"
 					class="left carousel-control"><img
 					src="/static/img/arrow-left-test-slider.png" alt=""> </a> <a
-					data-slide="next" href="#quote-carousel1"
+					data-slide="next" href="#quote-carousel"
 					class="right carousel-control"><img
 					src="/static/img/arrow-right-test-slider.png" alt=""> </a>
 			</div>
@@ -240,8 +240,8 @@
     {% endif %}
         <img src="{{ slider.image.url }}" alt="Image">
       {% if slider.text %}
- <div class="overlay1">
-<p style=font-size:25px; class="ex1"><a href="{{slider.url_property}}" style="color: #FFFFFF">{{slider.text}}</a></p>
+ <div class="overlay1 col-sm-12">
+<p style=font-size:25px; class="ex1 "><a href="{{slider.url_property}}" style="color: #FFFFFF">{{slider.text}}</a></p>
 </div>
     {% endif %}
     </div>
