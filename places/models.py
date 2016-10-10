@@ -163,6 +163,7 @@ class ReviewVerified(models.Model):
     city = models.CharField(max_length=128)
     trip_name = models.CharField(max_length=128)
     rating = models.CharField(max_length=128)
+    pics = models.ImageField(upload_to ='static/userimg/', default = 'static/userimg/test-monail-img.jpg')
     comment=models.TextField()
 class GalleryImages(models.Model):
     image = models.ImageField(upload_to='static/galary/')

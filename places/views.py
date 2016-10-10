@@ -87,9 +87,12 @@ def index(request,params=None,id=None):
                                                     "themes":Themes.objects.all(),
                                                     "slider":SliderImages.objects.all(),
                                                     "iternary":iternary,
-                                                    "bestselling":BestSelling.objects.all()
-                                                    
+                                                    "bestselling":BestSelling.objects.all(),
+                                                    "review":ReviewVerified.objects.filter().order_by('-id')
                                                     })
+
+def all_review(request,params=None,id=None):
+    return TemplateResponse(request, 'all_review.html',{"review":ReviewVerified.objects.filter().order_by('-id')})
 
 def review_and_verified(request,params=None,id=None):
     if request.method=='GET' and 'planmybutton' in request.GET:
@@ -128,14 +131,19 @@ def review_and_verified(request,params=None,id=None):
     
     if request.method == 'POST' and 'rewiewbutton' in request.POST:
         data = request.POST
-        rating=data['email']
+        rating=data['rating']
+	if request.FILES=='':
+	    img=''
+	else:
+	    img=request.FILES['pic']
+	
         #hidden=request.POST['reviewhidden']
         name = request.POST['name']
         city = request.POST['city']
         trip =request.POST['trip']
         comment=request.POST['comment']
-        #rating=request.method['rating']
-        print name,city,trip,comment,rating
+       
+        #print name,city,trip,comment,rating
         if len(name)==0 or len(trip)==0 or len(rating)==0 or len(comment)==0:
             errors['fields']="Please All Fields A Required "  
         match_exists = re.match("[a-zA-Z0-9]", name)
@@ -158,7 +166,7 @@ def review_and_verified(request,params=None,id=None):
             messages.error(request, 'Please fill all the correctly once again.')
         else:
 	    errors={}
-            obj=ReviewVerified(rating=rating,name=name,city=city,trip_name=trip,comment=comment)
+            obj=ReviewVerified(pics=img,rating=rating,name=name,city=city,trip_name=trip,comment=comment)
             obj.save()
             messages.success(request, 'Thanks for your Reviews.') 
     if request.method=='POST' and 'submitbutton' in request.POST:

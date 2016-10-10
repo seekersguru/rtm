@@ -19,7 +19,7 @@ from django.conf.urls import include, url
 from django.contrib import admin
 from tinymce import urls as tiny_urls
 from places.views import sitemap,index,review_and_verified,customer_support \
-    ,listing_tour,vip_access,low_price_guaranteed,iternary_detail,theme_tour,nearest_buses
+    ,listing_tour,vip_access,low_price_guaranteed,all_review,iternary_detail,theme_tour,nearest_buses
 urlpatterns = [
     url(r'^admin/', include(admin.site.urls)),
     url(r'^tinymce/', include(tiny_urls)),
@@ -31,7 +31,7 @@ urlpatterns = [
     ## This one is for top packages 
     url(r'^listing-tour/$', listing_tour, name='listing-tour'),
     url(r'^theme/(?P<theme_id>[-\w]+)/$', theme_tour, name='theme_tour'),
-    
+    url(r'^all-review/$',all_review, name='all-review'),
     url(r'^tour/(?P<tour_id>[-\w]+)/$', listing_tour, name='listing-tour_by_id'),
     
     url(r'^vip-access/$', vip_access, name='vip-access'),

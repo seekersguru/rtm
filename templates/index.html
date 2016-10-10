@@ -142,8 +142,8 @@
                                      
 							
 	               </div>
-	<h2>
-		About Us <span class="yallow-line-2"> </span>
+		<h2>
+		Reviews <span class="yallow-line-2"> </span>
 	</h2>
 	<div class='row'>
 		<div class='col-md-12'>
@@ -156,56 +156,28 @@
 				</ol>
 				<!-- Carousel Slides / Quotes -->
 				<div class="carousel-inner">
+				 {% for review in review %}
+				    {% if forloop.counter == 1 %}
 					<!-- Quote 1 -->
 					<div class="item active">
-						<div>
-							<div class="testmonail-img">
-								<img class="img-circle" src="/static/img/test-monail-img.jpg">
-							</div>
-							<div class="testmonail-content">
-								<p style="color:black;">"Dreaming of a journey to be remembered all your life? You are at the best place, as we are the providers of travelling, trekking, glamping and lots of information to the most exquisite locations in India right from the Himalayas in the north to backwaters at Kerala, Sunderbans in the east to Rann of Kutch in the west."</p>
-								<div class="author">Dhruv singh chaudhary</div>
-							</div>
-						</div>
+					{% else %}
+						<div class="item">
+					{% endif %}
+					<div>
+					<div class="testmonail-img">
+					<img class="img-circle" src="{{ review.pics.url }}" width=128 height=130>
 					</div>
+					<div class="testmonail-content">
+					<p style="color:black;">{{review.comment}}</p><div class="author"><p style="color:black;">Trip Name : {{review.trip_name}} &nbsp; &nbsp;Rating : <font color="red">{{review.rating}}</font></p>
+					</div>
+					<div class="author" align="right"><p style="color:black;">By : {{review.name}}</div>
 
-					<!-- Quote 2 -->
-					<div class="item">
-						<div>
-							<div class="testmonail-img">
-								<img class="img-circle" src="/static/img/test-monail-img.jpg">
-							</div>
-							<div class="testmonail-content">
-								<p style="color:black;">"We are an innovative, forward thinking company that recognizes the need to move with ever-changing customer needs and that’s why our philosophy is one that emphasizes service, and a realization that effective communication is a key component in our business".</p>
-								<div class="author">Dhruv singh chaudhary</div>
-							</div>
-						</div>
 					</div>
-<div class="item">
-						<div>
-							<div class="testmonail-img">
-								<img class="img-circle" src="/static/img/test-monail-img.jpg">
-							</div>
-							<div class="testmonail-content">
-								<p style="color:black;">"Our cabs are pre-checked before dispatch and are fitted with.1 Global Positioning Systems (GPS)-To enable the cabs to be tracked or located in an emergency.2 Emergency kit and first aid box.3 Helpful, courteous, and fully trained drivers."</p>
-								<div class="author">Dhruv singh chaudhary</div>
-							</div>
-						</div>
 					</div>
-					<!-- Quote 3 -->
-					<div class="item">
-						<div>
-							<div class="testmonail-img">
-								<img class="img-circle" src="/static/img/test-monail-img.jpg">
-							</div>
-							<div class="testmonail-content">
-								<p style="color:black;">"And now we are emerging as the best providers for wildlife, adventure,pilgrimage and trekking trips in India. We stand out as a company which provides reliable, timely, and safe cab services by using complete, in-car credit and debit card access, along with computer aided dispatch."</p>
-								<div class="author">Dhruv singh chaudhary</div>
-							</div>
-						</div>
 					</div>
-
-				</div>
+{% endfor %}
+</div>
+				
 
 				<!-- Carousel Buttons Next/Prev -->
 				<a data-slide="prev" href="#quote-carousel1"
@@ -218,6 +190,9 @@
 		</div>
 	</div>
 </div>
+<h2>
+		<a href="/all-review/">View All Reviews </a><span class="yallow-line-2"> </span>
+	</h2>
 <!-- /container -->
 
 {% endblock %} {%block image_gallery %}
