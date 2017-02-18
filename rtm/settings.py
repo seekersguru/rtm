@@ -128,7 +128,7 @@ USE_TZ = True
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/1.8/howto/static-files/
 
-MEDIA_URL='http://54.201.139.103/' # during live chage url to original url  
+MEDIA_URL='http://54.202.235.14/' # during live chage url to original url  
 
 #STATIC_ROOT = 'staticfiles'
 STATIC_URL = '/static/'
