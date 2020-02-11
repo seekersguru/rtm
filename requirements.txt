@@ -1,5 +1,5 @@
 Cheetah==2.4.4
-Django==1.8.1
+Django==1.11.28
 Pillow==3.0.0
 PyYAML==3.10
 django-tinymce==2.0.5
