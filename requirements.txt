@@ -1,7 +1,7 @@
 Cheetah==2.4.4
 Django==1.8.1
 Pillow==3.0.0
-PyYAML==3.10
+PyYAML==5.4
 django-tinymce==2.0.5
 html5lib==0.999
 jsonpatch==1.3
